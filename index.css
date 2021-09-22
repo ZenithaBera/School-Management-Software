@@ -1,0 +1,51 @@
+.nav2{
+    display: none;
+}
+.nav1 a, .nav2 a{
+    color: #ffff;
+    text-decoration: none;
+}
+.nav1 a:hover, .nav2 a:hover{
+    background-color: 	#ffc107;
+    color: rgba(0, 0, 0, 0.911);
+    text-decoration: none;
+}
+img{
+    max-height: 50vh;
+    object-fit: cover;
+}
+@media (max-width: 768px) { 
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+    .nav2 em{
+        color: #000;
+    }
+}
+@media (max-width: 580px) {
+    img{
+        max-height: 30vh;
+        object-fit: cover;
+    }
+}
+@media (max-width: 335px) {
+    img{
+        max-height: 20vh;
+        object-fit: cover;
+    }
+}
+@media (max-width: 230px) {
+    img{
+        max-height: 15vh;
+        object-fit: cover;
+    }
+}
+@media (max-width: 170px) {
+    img{
+        max-height: 12vh;
+        object-fit: cover;
+    }
+}
