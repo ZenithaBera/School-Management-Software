@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 .nav1 a:hover, .nav2 a:hover{
-    background-color: 	#ffc107;
+    background-color: #ffc107;
     color: rgba(0, 0, 0, 0.911);
     text-decoration: none;
 }
@@ -14,7 +14,7 @@ img{
     max-height: 50vh;
     object-fit: cover;
 }
-@media (max-width: 768px) { 
+@media (max-width: 900px) { 
     .nav1{
         display: none;
     }
