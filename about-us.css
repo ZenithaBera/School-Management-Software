@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+img {
+  max-height: 50vh;
+  object-fit: cover;
+}
