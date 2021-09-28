@@ -72,3 +72,31 @@ img{
         object-fit: cover;
     }
 }
+/*infrastructure*/
+.sidepanel{
+    background-color: #ffc107;
+    color: #212529;
+    height: auto;
+}
+.sidepanel h3{
+padding: 5%;
+}
+nav a{
+    display: block;
+    padding: 5%;
+    color: #212529;
+    border-top: 2px solid rgba(0, 0, 0, 0.911);
+}
+nav a:last-child{border-bottom: 2px solid #212529;}
+nav a:hover{
+    background-color: #212529;
+    color: #ffc107;
+}
+.content p{
+    text-align: justify;
+}
+@media (max-width: 771px) { 
+    .sidepanel{
+        display: none;
+    }
+}
