@@ -1,8 +1,15 @@
 .nav1 a,
 .nav2 a,
-.adressdetails a {
+.adressdetails a,
+.community a {
   color: #ffff;
   text-decoration: none;
+}
+.contactus {
+  padding-top: 20px;
+}
+.map {
+  padding-top: 20px;
 }
 .nav2 {
   display: none;

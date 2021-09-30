@@ -1,0 +1,20 @@
+.table td {
+  border-top: 0;
+}
+hr {
+  background-color: #ffc107;
+}
+.table td {
+  padding: 5px;
+}
+.button {
+  margin-top: 40px;
+  margin-left: 80vh;
+  padding-bottom: 20px;
+}
+.register {
+  padding-top: 20px;
+}
+form {
+  margin-left: 20px;
+}

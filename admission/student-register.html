@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="student-register.css" />
+    <title>Student Register</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark text-light">
+      <div class="row register col-md-12 col-sm-12">
+        <a href=""><i class="fa fa-home"></i> <span>Home</span></a>
+        /
+        <span>Student Add</span>
+      </div>
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <!-- <h2 class="text-center mt-3" style="font-family: emoji">
+              Student Add
+            </h2> -->
+            <div class="form-area mt-2">
+              <h3 class="text-center" style="font-family: emoji">
+                Add Student Personal Details
+              </h3>
+              <hr />
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Name: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter your Name"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Father's Name: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="fname"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter your Father's Name"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Mother's Name: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="mname"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter your Mother's Name"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Father's Occupation: <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="foccu"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter Father's Occupation"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Mother's Occupation: <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="moccu"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter Mother's Occupation"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Gender: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select
+                          name="gender"
+                          class="form-control w-100"
+                          required=""
+                        >
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Date Of Birth (DOB): <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="date"
+                          name="dob"
+                          class="form-control w-100"
+                          required=""
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Religion: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="rel" class="form-control w-100">
+                          <option value="hindu">Hindu</option>
+                          <option value="islam">Islam</option>
+                          <option value="sikh">Sikh</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Category: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="category" class="form-control w-100">
+                          <option value="sc">SC / ST</option>
+                          <option value="obc">OBC / EBC</option>
+                          <option value="general">General</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Mobile Number: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="phone"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="+91-9135467672"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Alternative Number: <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="altnum"
+                          class="form-control w-100"
+                          placeholder="+91-9135467672"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Email Id: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="email"
+                          name="mail"
+                          class="form-control w-100"
+                          placeholder="demo@gmail.com"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Aadhar Number: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="adhar"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="1111 2222 3333"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Document: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="file"
+                          name="docu"
+                          class="form-control w-100"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Photo: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="file"
+                          name="photo"
+                          class="form-control w-100"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="container">
+                <h4 style="text-align: center !important; font-family: emoji">
+                  Address
+                </h4>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Village <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="vill"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your village"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Post Office <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="post"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your post"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Police Station <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="police"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your police station"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>District <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="dist"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your district"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>State <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="state"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your post"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Pin Code <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="pin"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your pin code"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container-fluid"> -->
+        <div class="col-md-4 col-sm-12 button">
+          <input
+            type="submit"
+            name="register"
+            value="Submit"
+            class="btn btn-success mt-3"
+          />
+          <input
+            type="reset"
+            name=""
+            value="Reset"
+            class="btn btn-danger ml-3 mt-3"
+          />
+          <!-- </div> -->
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>
