@@ -9,8 +9,9 @@ hr {
 }
 .button {
   margin-top: 40px;
-  margin-left: 80vh;
+  /* margin-left: 80vh; */
   padding-bottom: 20px;
+  display: inline-block;
 }
 .register {
   padding-top: 20px;

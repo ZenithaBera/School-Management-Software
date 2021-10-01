@@ -18,9 +18,11 @@
   <body>
     <div class="container-fluid bg-dark text-light">
       <div class="row register col-md-12 col-sm-12">
-        <a href=""><i class="fa fa-home"></i> <span>Home</span></a>
+        <a href=""
+          ><i class="fa fa-home"></i> <span class="fw-bold">Home</span></a
+        >
         /
-        <span>Student Add</span>
+        <span class="fw-bold">Student Add</span>
       </div>
       <form action="" method="POST" enctype="multipart/form-data">
         <div class="row">
@@ -29,8 +31,11 @@
               Student Add
             </h2> -->
             <div class="form-area mt-2">
-              <h3 class="text-center" style="font-family: emoji">
-                Add Student Personal Details
+              <h3
+                class="text-center"
+                style="font-family: emoji; font-weight: 500; margin-top: 30px"
+              >
+                Student Personal Details
               </h3>
               <hr />
               <div class="row">
@@ -317,9 +322,15 @@
                 </div>
               </div>
               <div class="container">
-                <h4 style="text-align: center !important; font-family: emoji">
+                <h3
+                  style="
+                    text-align: center !important;
+                    font-family: emoji;
+                    margin-top: 30px;
+                  "
+                >
                   Address
-                </h4>
+                </h3>
                 <hr />
               </div>
               <div class="row">
@@ -437,21 +448,21 @@
             </div>
           </div>
         </div>
-        <!-- <div class="container-fluid"> -->
-        <div class="col-md-4 col-sm-12 button">
-          <input
-            type="submit"
-            name="register"
-            value="Submit"
-            class="btn btn-success mt-3"
-          />
-          <input
-            type="reset"
-            name=""
-            value="Reset"
-            class="btn btn-danger ml-3 mt-3"
-          />
-          <!-- </div> -->
+        <div class="container-fluid">
+          <div class="row button">
+            <input
+              type="submit"
+              name="register"
+              value="Submit"
+              class="btn btn-success mt-3"
+            />
+            <input
+              type="reset"
+              name=""
+              value="Reset"
+              class="btn btn-danger ml-3 mt-3"
+            />
+          </div>
         </div>
       </form>
     </div>
