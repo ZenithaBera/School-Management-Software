@@ -73,6 +73,9 @@ img{
     }
 }
 /*infrastructure*/
+.common .nav1{
+    border-bottom: 5px solid #ffc107;
+}
 .sidepanel{
     background-color: #ffc107;
     color: #212529;
@@ -87,6 +90,7 @@ nav a{
     color: #212529;
     border-top: 2px solid rgba(0, 0, 0, 0.911);
 }
+nav a:first-child{border-top: none;}
 nav a:last-child{border-bottom: 2px solid #212529;}
 nav a:hover{
     background-color: #212529;

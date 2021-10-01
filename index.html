@@ -48,7 +48,7 @@
           <a href="" class="p-4">About Us</a>
           <a href="" class="p-4">Photo Gallery</a>
           <a href="" class="p-4">Admission</a>
-          <a href="" class="p-4">Courses</a>
+          <a href="" class="p-4">Academics</a>
           <a href="" class="p-4">Infrastructure</a>
           <a href="" class="p-4">Contact</a>
         </div>
@@ -84,7 +84,7 @@
                   <a class="nav-link" href="">About Us</a>
                   <a class="nav-link" href="">Photo Gallery</a>
                   <a class="nav-link" href="">Admission</a>
-                  <a class="nav-link" href="">Courses</a>
+                  <a class="nav-link" href="">Academics</a>
                   <a class="nav-link" href="">Infrastructure</a>
                   <a class="nav-link" href="">Contact</a>
                 </nav>
@@ -194,9 +194,9 @@
             <div class="card border-warning mb-3" style="max-width: auto;">
               <div class="pt-4 text-center bg-dark"><em class="h1 text-warning fas fa-globe-americas"></em></div>
               <div class="card-body bg-dark">
-                <h5 class="card-title">Online Class Schedule</h5>
-                <p class="card-text">Login using your credentials given by the school.</p>
-                <a href="" class="btn btn-warning" type="button">View More..</a>
+                <h5 class="card-title">Class Schedule</h5>
+                <p class="card-text">Check the class schedule properly before classes.</p>
+                <a href="academics.html" class="btn btn-warning" type="button">View More..</a>
               </div>
             </div>
           </div>
@@ -206,7 +206,33 @@
               <div class="card-body bg-dark">
                 <h5 class="card-title">Virtual Library</h5>
                 <p class="card-text">Login using your credentials from your library card.</p>
-                <a href="" class="btn btn-warning" type="button">View More..</a>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Student Id:</label>
+            <input type="text" class="form-control bg-secondary text-light opacity-75" id="">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Password:</label>
+            <input type="text" class="form-control bg-secondary text-light opacity-75" id="">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
               </div>
             </div>
           </div>
