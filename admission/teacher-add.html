@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <title>Teacher Add</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark text-light">
+      <div class="row register col-md-12 col-sm-12">
+        <a href=""
+          ><i class="fa fa-home"></i> <span class="fw-bold">Home</span></a
+        >
+        /
+        <span class="fw-bold">Teacher Add</span>
+      </div>
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="form-area mt-2">
+              <h3
+                class="text-center"
+                style="font-family: emoji; font-weight: 500; margin-top: 30px"
+              >
+                Teacher Details
+              </h3>
+              <hr />
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Name: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter your Name"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Department: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="fname"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter Department"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Teacher ID: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="mname"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="Enter ID"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Mobile Number: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="phone"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="+91-9135467672"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Alternative Number: <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="altnum"
+                          class="form-control w-100"
+                          placeholder="+91-9135467672"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Email Id: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="email"
+                          name="mail"
+                          class="form-control w-100"
+                          placeholder="demo@gmail.com"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>
+                        Date Of Joining: <span style="color: red">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="date"
+                          name="joining date"
+                          class="form-control w-100"
+                          required=""
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Salary: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="salary"
+                          class="form-control w-100"
+                          placeholder=""
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Gender: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select
+                          name="gender"
+                          class="form-control w-100"
+                          required=""
+                        >
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Section: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="section"
+                          class="form-control w-100"
+                          placeholder=""
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Section: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="section"
+                          class="form-control w-100"
+                          placeholder="demo@gmail.com"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>CV: <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="file"
+                          name="docu"
+                          class="form-control w-100"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row button">
+            <input
+              type="submit"
+              name="register"
+              value="Submit"
+              class="btn btn-success mt-3"
+            />
+            <input
+              type="reset"
+              name=""
+              value="Reset"
+              class="btn btn-danger ml-3 mt-3"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>
