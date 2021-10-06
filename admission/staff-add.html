@@ -12,8 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="login.css" />
-    <title>Teacher Add</title>
+    <link rel="stylesheet" href="staff-add.css" />
+    <title>Staff Add</title>
   </head>
   <body>
     <div class="container-fluid bg-dark text-light">
@@ -22,7 +22,7 @@
           ><i class="fa fa-home"></i> <span class="fw-bold">Home</span></a
         >
         /
-        <span class="fw-bold">Teacher Add</span>
+        <span class="fw-bold">Staff Add</span>
       </div>
       <form action="" method="POST" enctype="multipart/form-data">
         <div class="row">
@@ -32,7 +32,7 @@
                 class="text-center"
                 style="font-family: emoji; font-weight: 500; margin-top: 30px"
               >
-                Teacher Details
+                Staff Details
               </h3>
               <hr />
               <div class="row">
@@ -57,16 +57,16 @@
                 <div class="col-md-4 col-sm-12">
                   <table class="table table-responsive w-100">
                     <tr>
-                      <td>Department: <span style="color: red">*</span></td>
+                      <td>Aadhar Number: <span style="color: red">*</span></td>
                     </tr>
                     <tr>
                       <td>
                         <input
-                          type="text"
-                          name="dept"
+                          type="number"
+                          name="aadhar"
                           class="form-control w-100"
                           required=""
-                          placeholder="Enter Department"
+                          placeholder="1111 2222 3333"
                         />
                       </td>
                     </tr>
@@ -75,16 +75,15 @@
                 <div class="col-md-4 col-sm-12">
                   <table class="table table-responsive w-100">
                     <tr>
-                      <td>Teacher ID: <span style="color: red">*</span></td>
+                      <td>Age: <span style="color: red">*</span></td>
                     </tr>
                     <tr>
                       <td>
                         <input
-                          type="text"
-                          name="teachid"
+                          type="number"
+                          name="age"
                           class="form-control w-100"
-                          required=""
-                          placeholder="Enter ID"
+                          placeholder="45"
                         />
                       </td>
                     </tr>
@@ -132,118 +131,7 @@
                 <div class="col-md-4 col-sm-12">
                   <table class="table table-responsive w-100">
                     <tr>
-                      <td>Email Id: <span style="color: red">*</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          type="email"
-                          name="mail"
-                          class="form-control w-100"
-                          placeholder="demo@gmail.com"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>
-                        Date Of Joining: <span style="color: red">*</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          type="date"
-                          name="joining date"
-                          class="form-control w-100"
-                          required=""
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>Salary: <span style="color: red">*</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          type="text"
-                          name="salary"
-                          class="form-control w-100"
-                          placeholder=""
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>Gender: <span style="color: red">*</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <select
-                          name="gender"
-                          class="form-control w-100"
-                          required=""
-                        >
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                          <option value="other">Other</option>
-                        </select>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>Section: <span style="color: red">*</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          type="text"
-                          name="section"
-                          class="form-control w-100"
-                          placeholder=""
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>Section: <span style="color: red">*</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          type="text"
-                          name="section"
-                          class="form-control w-100"
-                          placeholder="demo@gmail.com"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                  <table class="table table-responsive w-100">
-                    <tr>
-                      <td>CV: <span style="color: red">*</span></td>
+                      <td>Document: <span style="color: red">*</span></td>
                     </tr>
                     <tr>
                       <td>
@@ -251,6 +139,130 @@
                           type="file"
                           name="docu"
                           class="form-control w-100"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="container">
+                <h3
+                  style="
+                    text-align: center !important;
+                    font-family: emoji;
+                    margin-top: 30px;
+                  "
+                >
+                  Address
+                </h3>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Village <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="vill"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your village"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Post Office <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="post"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your post"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Police Station <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="police"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your police station"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>District <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="dist"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your district"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>State <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="state"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your post"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <table class="table table-responsive w-100">
+                    <tr>
+                      <td>Pin Code <span style="color: red">*</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="number"
+                          name="pin"
+                          class="form-control w-100"
+                          required=""
+                          placeholder="enter your pin code"
                         />
                       </td>
                     </tr>
