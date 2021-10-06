@@ -44,11 +44,11 @@ h3 {
   .nav2 em {
     color: #000;
   }
-  iframe {
+  /*iframe {
     width: auto;
     height: auto;
-  }
+  }*/
 }
-.map {
+/*.map {
   margin-left: 10px;
-}
+}*/

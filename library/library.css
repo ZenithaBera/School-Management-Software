@@ -1,0 +1,5 @@
+@media (max-width: 775px) { 
+    .card{
+        max-width: 100%;
+    }
+}

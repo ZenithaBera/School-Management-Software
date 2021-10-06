@@ -15,21 +15,18 @@ img {
   background-size: cover;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 1.02%;
-  background-image: url("https://i.pinimg.com/originals/5b/12/ae/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg");
+  background-image: url("images/about/about.jpg");
 }
 .imgbus {
-  /* width: 100;
-  height: 100; */
+  width: 100;
+  height: 100;
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 1.02%;
-  background-image: url("https://media.istockphoto.com/photos/school-buses-lined-up-ready-to-pick-up-kids-picture-id1092429924?b=1&k=20&m=1092429924&s=170667a&w=0&h=g80-jd4hujUBpvRBpfxMS4--QleRpC8z_C3_nxds0YE=");
+  background-image: url("images/about/bus.jpg");
 }
-.classpic {
-  display: none;
-}
-.buspic {
+.classpic, .buspic {
   display: none;
 }
 .navhead {
@@ -58,6 +55,14 @@ img {
   }
   .nav2 em {
     color: #000;
+  }
+}
+@media (max-width: 767px) { 
+  .imgclass, .imgbus{
+      display: none;
+  }
+  .classpic, .buspic{
+      display: block;
   }
 }
 @media (max-width: 580px) {

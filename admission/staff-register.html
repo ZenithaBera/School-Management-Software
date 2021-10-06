@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="register.css" />
-    <title>Student Register</title>
+    <title>Staff Register</title>
   </head>
   <body>
     <div class="container-fluid bg-dark text-light overflow-hidden">
@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-md-2 col-sm-12 sidepanel m-0 p-0">
             <nav>
-              <h3 class="text-dark text-center">Student Dashboard</h3>
+              <h3 class="text-dark text-center">Staff Dashboard</h3>
               <a href="" class="text-decoration-none">&nbsp;&nbsp;&nbsp;Home</a>
                 <a class="active text-decoration-none bg-dark text-warning" href="">&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="" class="text-decoration-none">&nbsp;&nbsp;&nbsp;Profile</a>
@@ -42,30 +42,22 @@
             <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Father's Name: <span>*<span></label>
-            <input type="text" class="form-control" name="fname" placeholder="Enter your father's name" id="exampleInputPassword1" required>
+            <label for="exampleInputEmail1" class="form-label">Phone Number: <span>*<span></label>
+            <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Mother's Name: <span>*<span></label>
-            <input type="text" class="form-control" name="mname" placeholder="Enter your mother's name" id="exampleInputPassword1" required>
-          </div></div>
+            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
+            <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" required>
+          </div>
+          
+          </div>
         
           <div class="row">
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Father's Occupation: <span>*<span></label>
-            <input type="text" class="form-control" name="foccu" placeholder="Enter your father's occupation" id="exampleInputName1" required>
-          </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Mother's Occupation: <span>*<span></label>
-            <input type="text" class="form-control" name="moccup" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" required>
-          </div>
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>
             <input type="date" class="form-control" name="dob" id="exampleInputPassword1" required>
-          </div></div>
-        
-        
-          <div class="row">
+          </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: <span>*<span></label>
             <select class="form-select form-control" name="gender" aria-label="Default select example" required>
@@ -86,6 +78,11 @@
           <option value="5">Others</option>
         </select>
           </div>
+        </div>
+        
+        
+          <div class="row">
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: <span>*<span></label>
             <select class="form-select form-control" name="category" aria-label="Default select example" required>
@@ -94,31 +91,58 @@
           <option value="2">OBC / EBC</option>
           <option value="3">SC / ST</option>
         </select>
-          </div></div>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Position: <span>*<span></label>
+            <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <option selected disabled>Select your position</option>
+          <option value="1">Principal</option>
+          <option value="2">Counsellor</option>
+          <option value="3">Nurse</option>
+          <option value="4">Registrar</option>
+          <option value="5">Accountant</option>
+          <option value="4">Secretary</option>
+        </select>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Marital Status: <span>*<span></label>
+            <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <option selected disabled>Select your status</option>
+          <option value="1">Single</option>
+          <option value="2">Married</option>
+          <option value="3">Divorced</option>
+        </select>
+          </div>
+        </div>
         
         
           <div class="row">
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Mobile Number: <span>*<span></label>
-            <input type="tel" class="form-control" name="phone" placeholder="e.g. 123 456 7890" id="exampleInputName1" required>
-          </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
-            <input type="tel" class="form-control" name="altnum" placeholder="e.g. 123 456 7890" id="exampleInputPassword1" required>
-          </div>
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputPassword1" class="form-label">Experienced: <span>*<span></label>
+              <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+            </div>
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
+              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
+            </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
             <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
-          </div></div>
+          </div>
+          
+        </div>
         
         
           <div class="row">
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputEmail1" class="form-label">Date Of Joining: <span>*<span></label>
+              <input type="date" class="form-control" name="adhar" id="exampleInputName1" required>
+            </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
-            <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
-          </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Document: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">CV: <span>*<span></label>
               <input type="file" class="form-control" name="docu" aria-label="file example" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
@@ -157,24 +181,6 @@
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Pin Code: <span>*<span></label>
             <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" required>
-          </div></div>
-        
-        
-          <h4 class="text-center mt-2">Admission Details</h4><hr>
-        
-        
-          <div class="row">
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Class: <span>*<span></label>
-            <input type="text" class="form-control" name="cls" placeholder="Enter your class" id="exampleInputName1" required>
-          </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Section: <span>*<span></label>
-            <input type="text" class="form-control" name="sec" placeholder="Enter your section" id="exampleInputPassword1" required>
-          </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Roll Number: <span>*<span></label>
-            <input type="text" class="form-control" name="roll" placeholder="Enter your roll number" id="exampleInputPassword1" required>
           </div></div>
         
         
