@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,28 +21,28 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="register.css" />
-    <title>Student Register</title>
+    <title>Student Update</title>
   </head>
   <body>
     <div class="container-fluid bg-dark text-light overflow-hidden">
     
-      <!--Sidepanel-->
-      <div class="row">
-        <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
-            <nav>
-              <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
-              <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="active text-decoration-none bg-warning text-dark fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
-            </nav>
-        </div>
-
-        <div class="col-md-10 col-sm-12">
-          <div class="p-4 topbar">
-            <p class="h3 fw-bold">Registration</p>
+        <!--Sidepanel-->
+        <div class="row">
+          <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
+              <nav>
+                <h3 class="text-center text-light">Student Dashboard</h3>
+                <a href="" class="text-decoration-none"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+                  <a class="text-decoration-none" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                  <a href="" class="text-decoration-none"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
+                  <a href="" class="active text-decoration-none bg-warning text-dark"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
+                  <a href="" class="text-decoration-none"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+              </nav>
           </div>
+  
+          <div class="col-md-10 col-sm-12">
+            <div class="p-4 topbar">
+              <p class="h3">Update</p>
+            </div>
 
           <!--Form-->
       <form action="" method="POST" enctype="multipart/form-data">
@@ -46,33 +50,33 @@
         <div class="row">
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Name: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Name: </label>
             <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Father's Name: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Father's Name: </label>
             <input type="text" class="form-control" name="fname" placeholder="Enter your father's name" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Mother's Name: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Mother's Name: </label>
             <input type="text" class="form-control" name="mname" placeholder="Enter your mother's name" id="exampleInputPassword1" required>
           </div>
-
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Father's Occupation: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Father's Occupation: </label>
             <input type="text" class="form-control" name="foccu" placeholder="Enter your father's occupation" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Mother's Occupation: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Mother's Occupation: </label>
             <input type="text" class="form-control" name="moccup" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): </label>
             <input type="date" class="form-control" name="dob" id="exampleInputPassword1" required>
           </div>
-
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Gender: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Gender: </label>
             <select class="form-select" name="gender" aria-label="Default select example" required>
           <option selected disabled>Select your gender</option>
           <option value="1">Male</option>
@@ -81,7 +85,7 @@
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Religion: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Religion: </label>
             <select class="form-select" name="rel" aria-label="Default select example" required>
           <option selected disabled>Select your religion</option>
           <option value="1">Hindu</option>
@@ -92,38 +96,38 @@
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Category: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Category: </label>
             <select class="form-select" name="category" aria-label="Default select example" required>
           <option selected disabled>Select your category</option>
           <option value="1">General</option>
           <option value="2">OBC / EBC</option>
           <option value="3">SC / ST</option>
         </select>
-          </div> 
-
+          </div>
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Mobile Number: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Mobile Number: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="tel" class="form-control" name="phone" placeholder="e.g. 123 456 7890" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="tel" class="form-control" name="altnum" placeholder="e.g. 123 456 7890" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Email Id: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
-          </div> 
-
+          </div>
+          
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
             <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Document: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Document: </label>
               <input type="file" class="form-control" name="docu" aria-label="file example" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Photo: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Photo: <span><i class="fas fa-pen-nib"></i><span></label>
               <input type="file" class="form-control" name="photo" aria-label="file example" required>
           </div></div>
         
@@ -133,28 +137,28 @@
         
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Address: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Address: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Post Office: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Post Office: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="post" placeholder="Enter post office" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Police Station: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Police Station: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="police" placeholder="Enter police station" id="exampleInputPassword1" required>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">District: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">District: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">State: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">State: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="state" placeholder="Enter state" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Pin Code: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Pin Code: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" required>
           </div></div>
         
@@ -164,25 +168,25 @@
         
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Class: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Class: </label>
             <input type="text" class="form-control" name="cls" placeholder="Enter your class" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Section: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Section: </label>
             <input type="text" class="form-control" name="sec" placeholder="Enter your section" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Roll Number: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Roll Number: </label>
             <input type="text" class="form-control" name="roll" placeholder="Enter your roll number" id="exampleInputPassword1" required>
           </div></div>
         
         
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <span>* Marked fields are compulsory</span></div>
+            <span><i class="fas fa-pen-nib"></i> Marked fields can be updated only</span></div>
         
         <!--Button-->
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <button type="submit" name="register" class="btn btn-warning">Register</button>
+            <button type="submit" name="register" class="btn btn-warning">Update</button>
             <button type="reset" class="btn btn-secondary">Reset</button></div>
           </div>
       

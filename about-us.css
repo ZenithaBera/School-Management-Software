@@ -1,6 +1,8 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
 h1 {
   text-align: center;
-  font-family: sans-serif;
 }
 img {
   max-height: 50vh;

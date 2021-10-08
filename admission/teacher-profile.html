@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <title>Teacher Profile</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark text-light overflow-hidden">
+    
+      <!--Sidepanel-->
+      <div class="row">
+        <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
+            <nav>
+              <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
+              <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+                <a class="text-decoration-none fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a href="" class="active text-decoration-none bg-warning text-dark  fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
+                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
+                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+            </nav>
+        </div>
+
+        <div class="col-md-10 col-sm-12">
+          <div class="p-4 topbar">
+            <p class="h3 fw-bold">Profile</p>
+          </div>
+
+          <!--Form-->
+      <form action="" method="POST" enctype="multipart/form-data">
+        <h4 class="text-center mt-5">Personal Details</h4><hr>
+        <div class="row">
+          
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">Name: </label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Department: </label>
+            <input type="text" class="form-control" name="fname" placeholder="Enter the department" id="exampleInputPassword1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Class: </label>
+            <input type="text" class="form-control" name="mname" placeholder="Enter the class" id="exampleInputPassword1" disabled>
+          </div>
+          
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">Phone Number: </label>
+            <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Alternative Number: </label>
+            <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): </label>
+            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" disabled>
+          </div>
+          
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">Gender: </label>
+            <select class="form-select form-control" name="gender" aria-label="Default select example" disabled>
+          <option selected disabled>Select your gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Others</option>
+        </select>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Religion: </label>
+            <select class="form-select form-control" name="rel" aria-label="Default select example" disabled>
+          <option selected disabled>Select your religion</option>
+          <option value="1">Hindu</option>
+          <option value="2">Muslim</option>
+          <option value="3">Sikh</option>
+          <option value="4">Christian</option>
+          <option value="5">Others</option>
+        </select>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Category: </label>
+            <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
+          <option selected disabled>Select your category</option>
+          <option value="1">General</option>
+          <option value="2">OBC / EBC</option>
+          <option value="3">SC / ST</option>
+        </select>
+          </div>
+          
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputPassword1" class="form-label">Experienced: </label>
+              <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+            </div>
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
+              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" disabled>
+            </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Email Id: </label>
+            <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" disabled>
+          </div>
+          
+            <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+              <label for="exampleInputEmail1" class="form-label">Date Of Joining: </label>
+              <input type="date" class="form-control" name="adhar" id="exampleInputName1" disabled>
+            </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">CV: </label>
+              <input type="file" class="form-control" name="docu" aria-label="file example" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Photo: </label>
+              <input type="file" class="form-control" name="photo" aria-label="file example" disabled>
+          </div></div>
+        
+        
+          <h4 class="text-center mt-2">Address Details</h4><hr>
+        
+        
+          <div class="row">
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">Address: </label>
+            <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Post Office: </label>
+            <input type="text" class="form-control" name="post" placeholder="Enter post office" id="exampleInputPassword1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Police Station: </label>
+            <input type="text" class="form-control" name="police" placeholder="Enter police station" id="exampleInputPassword1" disabled>
+          </div>
+          
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">District: </label>
+            <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">State: </label>
+            <input type="text" class="form-control" name="state" placeholder="Enter state" id="exampleInputPassword1" disabled>
+          </div>
+          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">Pin Code: </label>
+            <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" disabled>
+          </div></div>
+        
+      </form>
+        </div>
+    </div>
+    </div>
+  </body>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>

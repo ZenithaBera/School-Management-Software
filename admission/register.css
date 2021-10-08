@@ -1,3 +1,6 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
 span{
   color: rgb(255, 53, 2);
 }
@@ -5,8 +8,8 @@ hr {
   background-color: #ffc107;
 }
 .sidepanel{
-  background-color: #ffc107;
-  color: #343a40;
+  color: #ffc107;
+  background-color: #212529;
   height: auto;
 }
 .sidepanel h3{
@@ -15,19 +18,20 @@ padding: 5%;
 nav a{
   display: block;
   padding: 5%;
-  color: #343a40;
-  border-top: 2px solid #343a40;
-  text-decoration: none;
+  color: #ffff;
+  border-top: 2px solid #ffc107;
 }
 nav a:first-child{border-top: none;}
-nav a:last-child{border-bottom: 2px solid #343a40;}
+nav a:last-child{border-bottom: 2px solid #ffc107;}
 nav a:hover{
-  background-color: #343a40;
-  color: #ffc107;
-  text-decoration: none;
+  color: #212529;
+  background-color: #ffc107;
 }
 @media (max-width: 771px) { 
   .sidepanel{
       display: none;
   }
+}
+.topbar{
+  border-bottom: 4px solid #ffc107;
 }
