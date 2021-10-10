@@ -27,11 +27,35 @@ nav a:hover{
   color: #212529;
   background-color: #ffc107;
 }
+.topbar{
+  border-bottom: 4px solid #ffc107;
+}
+.topbar{
+  display: block;
+}
+.nav2{
+  display: none;
+}
+.nav2 a{
+  color: #ffff;
+  text-decoration: none;
+}
+.nav2 a:hover{
+  background-color: 	#ffc107;
+  color: rgba(0, 0, 0, 0.911);
+  text-decoration: none;
+}
 @media (max-width: 771px) { 
   .sidepanel{
       display: none;
   }
+  .topbar{
+    display: none;
+  }
+  .nav2{
+    display: block;
 }
-.topbar{
-  border-bottom: 4px solid #ffc107;
+.nav2 em{
+    color: #000;
+}
 }

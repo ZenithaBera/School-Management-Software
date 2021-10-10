@@ -16,7 +16,8 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="register.css" type="text/css" />
+    
     <title>Student Register</title>
   </head>
   <body>
@@ -33,11 +34,52 @@
                 <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
                 <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
             </nav>
-        </div>
+        </div>   
+          
 
         <div class="col-md-10 col-sm-12">
           <div class="p-4 topbar">
             <p class="h3 fw-bold">Registration</p>
+          </div>
+
+        
+          <div class="col-md-12 col-sm-12 nav2">
+            <div class="dropdown">
+              <nav
+                class="
+                  navbar navbar-expand-lg navbar-dark
+                  bg-dark
+                "
+                aria-label=""
+              >
+              <h3 class="navbar-brand justify-content-start fw-bold">Registration</h3>
+                <button
+                  class="navbar-toggler bg-warning mb-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="true"
+                  aria-label="Toggle navigation"
+                >
+                  <em class="fas fa-bars"></em>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <nav class="nav flex-column" aria-label="">
+                    <a class="nav-link fw-bold" href="">Home</a>
+                    <a
+                      class="nav-link active bg-warning text-dark fw-bold"
+                      aria-current="page"
+                      href="#"
+                      >Registration</a
+                    >
+                    <a class="nav-link fw-bold" href="">Profile</a>
+                    <a class="nav-link fw-bold" href="">Update</a>
+                    <a class="nav-link fw-bold" href="">Delete</a>
+                  </nav>
+                </div>
+              </nav>
+            </div>
           </div>
 
           <!--Form-->
@@ -190,5 +232,5 @@
         </div>
     </div>
   </body>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
