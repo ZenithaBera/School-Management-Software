@@ -1,34 +1,60 @@
-window.onload = function () {
-  var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
+//Bar Chart
+var xValues = ["Class VIII", "CLass IX", "Class X", "Class XI", "Class XII"];
+var yValues = [55, 49, 44, 30, 24];
+var barColors = [
+  "#ffc107",
+  "#FBFF00",
+  "#FF9300",
+  "#FFD371",
+  "#FC5404"
+];
+
+new Chart("myChart1", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
     title: {
-      text: "Subjects Percentages",
-    },
-    axisY: {
-      title: "Percent",
-    },
-    data: [
-      {
-        type: "column",
-        showInLegend: true,
-        legendMarkerColor: "grey",
-        legendText: "Subjects",
-        dataPoints: [
-          { y: 30, label: "Maths" },
-          { y: 26, label: "Physics" },
-          { y: 16, label: "Chemistry" },
-          { y: 15, label: "Computer" },
-          { y: 45, label: "History" },
-          { y: 100, label: "Civics" },
-          { y: 97, label: "EVS" },
-          { y: 80, label: "Hindi" },
-        ],
-      },
-    ],
-  });
-  chart.render();
-};
+      display: true,
+      text: "Overall Class Attendance"
+    }
+  }
+});
+
+//Pie Chart
+var xValues = ["Classes", "Course", "Meeting Deadline", "Communication Skills", "Punctuality"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = [
+  "#ffc107",
+  "#FBFF00",
+  "#FF9300",
+  "#FFD371",
+  "#FC5404"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Overall Performance"
+    }
+  }
+});
+
 
 // Calender
 today = new Date();
@@ -109,7 +135,7 @@ function showCalendar(month, year) {
           year === today.getFullYear() &&
           month === today.getMonth()
         ) {
-          cell.classList.add("bg-info");
+          cell.classList.add("bg-warning");
         } // color today's date
         cell.appendChild(cellText);
         row.appendChild(cell);
@@ -121,7 +147,6 @@ function showCalendar(month, year) {
   }
 }
 
-// check how many days in a month code from https://dzone.com/articles/determining-number-days-month
 function daysInMonth(iMonth, iYear) {
   return 32 - new Date(iYear, iMonth, 32).getDate();
 }
