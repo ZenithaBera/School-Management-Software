@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['name'])){
+	$msg = $_SESSION['name'];
+
+	echo "<script>alert('$msg')</script>";
+}
+session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,10 +38,9 @@
             <nav>
               <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="active text-decoration-none bg-warning text-dark fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+                <a href="student-register.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a href="student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                
             </nav>
         </div>   
           
@@ -70,12 +78,11 @@
                     <a
                       class="nav-link active bg-warning text-dark fw-bold"
                       aria-current="page"
-                      href="#"
+                      href="student-register.php"
                       >Registration</a
                     >
-                    <a class="nav-link fw-bold" href="">Profile</a>
-                    <a class="nav-link fw-bold" href="">Update</a>
-                    <a class="nav-link fw-bold" href="">Delete</a>
+                    <a class="nav-link fw-bold" href="student-delete.php">Profile Details</a>
+                    
                   </nav>
                 </div>
               </nav>
@@ -83,7 +90,7 @@
           </div>
 
           <!--Form-->
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="../php/student_registration.php" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
@@ -106,7 +113,7 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Mother's Occupation: <span>*<span></label>
-            <input type="text" class="form-control" name="moccup" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="moccu" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>
@@ -124,7 +131,7 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: <span>*<span></label>
-            <select class="form-select" name="rel" aria-label="Default select example" required>
+            <select class="form-select" name="religion" aria-label="Default select example" required>
           <option selected disabled>Select your religion</option>
           <option value="1">Hindu</option>
           <option value="2">Muslim</option>
@@ -145,7 +152,7 @@
 
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Mobile Number: <span>*<span></label>
-            <input type="tel" class="form-control" name="phone" placeholder="e.g. 123 456 7890" id="exampleInputName1" required>
+            <input type="tel" class="form-control" name="mobnum" placeholder="e.g. 123 456 7890" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
@@ -153,16 +160,16 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
-            <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
+            <input type="email" class="form-control" name="email" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
           </div> 
 
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
-            <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Document: <span>*<span></label>
-              <input type="file" class="form-control" name="docu" aria-label="file example" required>
+              <input type="file" class="form-control" name="document" aria-label="file example" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Photo: <span>*<span></label>
@@ -176,7 +183,7 @@
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Address: <span>*<span></label>
-            <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="address" placeholder="Enter your address" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Post Office: <span>*<span></label>
@@ -189,7 +196,7 @@
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">District: <span>*<span></label>
-            <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="district" placeholder="Enter your district" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">State: <span>*<span></label>
@@ -207,11 +214,11 @@
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Class: <span>*<span></label>
-            <input type="text" class="form-control" name="cls" placeholder="Enter your class" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="class" placeholder="Enter your class" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Section: <span>*<span></label>
-            <input type="text" class="form-control" name="sec" placeholder="Enter your section" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="section" placeholder="Enter your section" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Roll Number: <span>*<span></label>

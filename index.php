@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -215,20 +216,20 @@
         <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="php/librarylogin.php" method="POST">
           <div class="mb-3">
             <label for="" class="col-form-label">Email:</label>
-            <input type="email" class="form-control bg-secondary text-light opacity-75" id="">
+            <input type="email" class="form-control bg-secondary text-light opacity-75" name="email" id="">
           </div>
           <div class="mb-3">
             <label for="" class="col-form-label">Student Id:</label>
-            <input type="text" class="form-control bg-secondary text-light opacity-75" id="">
+            <input type="text" class="form-control bg-secondary text-light opacity-75" name="roll" id="">
           </div>
-        </form>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-warning">Login</button>
+        <button type="submit" class="btn btn-warning" name="login">Login</a></form>
       </div>
     </div>
   </div>
