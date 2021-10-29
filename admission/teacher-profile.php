@@ -1,24 +1,24 @@
 <?php
-	include '../php/db_student.php';
+	include '../php/db_teacher.php';
 ?>
 <?php
 session_start();
     if(isset($_POST['view'])){
         $id = $_POST['id'];
 
-        $sql = "select * from student where id = '$id'";
+        $sql = "select * from teacher where id = '$id'";
         $table = mysqli_query($conn,$sql);
         $row = mysqli_fetch_assoc($table);
     }
-    elseif(isset($_SESSION['name'])){
-      echo "<script>alert('Register 1st')</script>";
-    }
-    else{
-       echo "Not Registered";
-       /*echo "error".mysqli_error($conn);
-       <script>window.location("student-register.php");</script>*/
-       header("location:teacher-register.php");
-    }
+    // elseif(isset($_SESSION['name'])){
+    //   echo "<script>alert('Register 1st')</script>";
+    // }
+    // else{
+    //    echo "Not Registered";
+    //    /*echo "error".mysqli_error($conn);
+    //    <script>window.location("student-register.php");</script>*/
+    //    header("location:teacher-register.php");
+    // }
     session_destroy();
 ?>
 <!DOCTYPE html>
@@ -105,39 +105,44 @@ session_start();
           
 
           <!--Form-->
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form>
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
+           <div class="row d-flex justify-content-center">
+          <div class="col-md-2 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+          <img src="../php/imagemoveTeacher/<?php echo $row['photo'] ?>" class="border border-3 rounded-circle w-100" style="height:180px">
+          </div>
+          </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Name: </label>
-            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" disabled>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" value="<?php echo $row['name']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Department: </label>
-            <input type="text" class="form-control" name="fname" placeholder="Enter the department" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="dept" placeholder="Enter the department" id="exampleInputPassword1" value="<?php echo $row['dept']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Class: </label>
-            <input type="text" class="form-control" name="mname" placeholder="Enter the class" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="class" placeholder="Enter the class" id="exampleInputPassword1" value="<?php echo $row['class']; ?>" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Phone Number: </label>
-            <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" disabled>
+            <input type="text" class="form-control" name="phnnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" value="<?php echo $row['phnnum']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: </label>
-            <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" value="<?php echo $row['altnum']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): </label>
-            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" disabled>
+            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" value="<?php echo $row['dob']; ?>" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
-            <select class="form-select form-control" name="gender" aria-label="Default select example" disabled>
+            <select class="form-select form-control" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>" disabled>
           <option selected disabled>Select your gender</option>
           <option value="1">Male</option>
           <option value="2">Female</option>
@@ -146,7 +151,7 @@ session_start();
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
-            <select class="form-select form-control" name="rel" aria-label="Default select example" disabled>
+            <select class="form-select form-control" name="rel" aria-label="Default select example" value="<?php echo $row['rel']; ?>" disabled>
           <option selected disabled>Select your religion</option>
           <option value="1">Hindu</option>
           <option value="2">Muslim</option>
@@ -157,7 +162,7 @@ session_start();
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: </label>
-            <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
+            <select class="form-select form-control" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>" disabled>
           <option selected disabled>Select your category</option>
           <option value="1">General</option>
           <option value="2">OBC / EBC</option>
@@ -167,32 +172,33 @@ session_start();
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: </label>
-              <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
+              <select class="form-select form-control" name="exp" aria-label="Default select example" value="<?php echo $row['exp']; ?>" disabled>
             <option value="1">Yes</option>
             <option value="2">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
-              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" disabled>
+              <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" value="<?php echo $row['aadhar']; ?>" disabled>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: </label>
-            <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" disabled>
+            <input type="email" class="form-control" name="email" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" value="<?php echo $row['email']; ?>" disabled>
           </div>
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Date Of Joining: </label>
-              <input type="date" class="form-control" name="adhar" id="exampleInputName1" disabled>
+              <input type="date" class="form-control" name="doj" id="exampleInputName1" value="<?php echo $row['doj']; ?>" disabled>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">CV: </label>
-              <input type="file" class="form-control" name="docu" aria-label="file example" disabled>
+              <input type="file" class="form-control" name="docu" aria-label="file example" value="<?php echo $row['docu']; ?>" disabled>
           </div>
-          <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
+          <!-- <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Photo: </label>
               <input type="file" class="form-control" name="photo" aria-label="file example" disabled>
-          </div></div>
+          </div> -->
+        </div>
         
         
           <h4 class="text-center mt-2">Address Details</h4><hr>
@@ -201,28 +207,28 @@ session_start();
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Address: </label>
-            <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" disabled>
+            <input type="text" class="form-control" name="address" placeholder="Enter your address" id="exampleInputName1" value="<?php echo $row['address']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Post Office: </label>
-            <input type="text" class="form-control" name="post" placeholder="Enter post office" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="post" placeholder="Enter post office" id="exampleInputPassword1" value="<?php echo $row['post']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Police Station: </label>
-            <input type="text" class="form-control" name="police" placeholder="Enter police station" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="police" placeholder="Enter police station" id="exampleInputPassword1" value="<?php echo $row['police']; ?>" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">District: </label>
-            <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" disabled>
+            <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" value="<?php echo $row['dist']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">State: </label>
-            <input type="text" class="form-control" name="state" placeholder="Enter state" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="state" placeholder="Enter state" id="exampleInputPassword1" value="<?php echo $row['state']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Pin Code: </label>
-            <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" disabled>
+            <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" value="<?php echo $row['pin']; ?>" disabled>
           </div></div>
         
       </form>

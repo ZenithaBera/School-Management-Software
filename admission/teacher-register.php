@@ -91,7 +91,7 @@
 
           
           <!--Form-->
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="../php/teacher_registration.php" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
