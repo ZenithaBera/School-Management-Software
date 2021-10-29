@@ -22,7 +22,7 @@
 		$pin = $_POST['pin'];
 		
 
-		$sql = "update staff set mobnum='$mobnum',altnum='$altnum',mstatus = '$mstatus',email='$email',photo='$photo',address='$address',post='$post',police='$police',district='$district',state='$state',pin='$pin' where id = '$id'";
+		$sql = "update staff set mobnum='$mobnum',altnum='$altnum',mstatus='$mstatus',email='$email',photo='$photo',address='$address',post='$post',police='$police',district='$district',state='$state',pin='$pin' where id = '$id'";
 
 		if(mysqli_query($conn,$sql)){
 			echo "<script>alert('Data Updated');</script>";
