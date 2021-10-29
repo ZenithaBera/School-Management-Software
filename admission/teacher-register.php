@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -90,7 +91,7 @@
 
           
           <!--Form-->
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="../php/teacher_registration.php" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
@@ -100,20 +101,20 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Department: <span>*<span></label>
-            <input type="text" class="form-control" name="fname" placeholder="Enter the department" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="dept" placeholder="Enter the department" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Class: <span>*<span></label>
-            <input type="text" class="form-control" name="mname" placeholder="Enter the class" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="class" placeholder="Enter the class" id="exampleInputPassword1" required>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Phone Number: <span>*<span></label>
-            <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="phnnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
-            <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>
@@ -152,23 +153,23 @@
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: <span>*<span></label>
-              <select class="form-select form-control" name="category" aria-label="Default select example" required>
+              <select class="form-select form-control" name="exp" aria-label="Default select example" required>
             <option value="1">Yes</option>
             <option value="2">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
-              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
+              <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
-            <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
+            <input type="email" class="form-control" name="email" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
           </div>
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Date Of Joining: <span>*<span></label>
-              <input type="date" class="form-control" name="adhar" id="exampleInputName1" required>
+              <input type="date" class="form-control" name="doj" id="exampleInputName1" required>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">CV: <span>*<span></label>
@@ -186,7 +187,7 @@
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Address: <span>*<span></label>
-            <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="address" placeholder="Enter your address" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Post Office: <span>*<span></label>

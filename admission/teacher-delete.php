@@ -1,3 +1,6 @@
+<?php
+	include '../php/db_teacher.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,6 +22,15 @@
     <link rel="stylesheet" href="register.css" />
     <title>Teacher Delete</title>
   </head>
+   <script>
+	function Delete(){
+		var x = confirm("Do you want to delete");
+		if(x)
+			return true;
+		else
+			return false;
+	}
+</script>
   <body class="bg-dark">
     <div class="container-fluid bg-dark text-light overflow-hidden">
     
@@ -85,43 +97,92 @@
             <thead>
             <th>Sl. No.</th>
             <th>Name</th>
-                            <th>Father's Name</th>
-                            <th>Date of Birth (DOB)</th>
-                            <th>Phone Number</th>
-                            <th>Email Id</th>
+                            <th>Department</th>
                             <th>Class</th>
-                            <th>Roll No.</th>
-                            <th>Action</th>
-          </thead>
-          <tbody>
+                            <th>Phone Number</th>
+                            <th>Alternative Number</th>
+                            <th>DOB</th>
+                            <th>Gender</th>
+                            <th>Religion</th>
+                            <th>Category </th>
+                            <th>Experience</th>
+                            <th>Aadhar Number</th>
+                            <th>Email ID </th>
+                            <th>Date of Joining</th>
+                            <th>CV</th>
+                            <th>Photo</th>
+                            <th>Address</th>
+                            <th>Post Office</th>
+                            <th>Police Station</th>
+                            <th>District</th>
+                            <th>State</th>
+                            <th>Pincode</th>
+                          </thead>
+                          <tbody>
+                              <?php 
+					$sql = "select * from teacher";
+					$table = mysqli_query($conn,$sql);
+          
+					$i = 1;
+					if(mysqli_num_rows($table) > 0){
+						while($row = mysqli_fetch_assoc($table)){
+					?>
           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-        
+              <td><?php echo $row['id']; ?></td>
+              <td><?php echo $row['name']; ?></td>
+              <td><?php echo $row['dept']; ?></td>
+              <td><?php echo $row['class']; ?></td>
+              <td><?php echo $row['phnnum']; ?></td>
+              <td><?php echo $row['altnum']; ?></td>
+              <td><?php echo $row['dob']; ?></td>
+              <td><?php echo $row['gender']; ?></td>
+               <td><?php echo $row['rel']; ?></td>
+              <td><?php echo $row['category']; ?></td>
+              <td><?php echo $row['exp']; ?></td>
+              <td><?php echo $row['aadhar']; ?></td>
+              <td><?php echo $row['email']; ?></td>
+              <td><?php echo $row['doj']; ?></td>
+              <td><?php echo $row['docu']; ?></td>
+              <td><?php echo $row['photo']; ?></td>
+                <td><?php echo $row['address']; ?></td>
+              <td><?php echo $row['post']; ?></td>
+              <td><?php echo $row['police']; ?></td>
+              <td><?php echo $row['dist']; ?></td>
+              <td><?php echo $row['state']; ?></td>
+              <td><?php echo $row['pin']; ?></td>
               <td>
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
-                    <form>
-                      <input type="hidden" name="" value="">
-                        <button class="fa fa-eye btn-sm btn-warning" name="profile"></button>
+                    <form action="teacher-profile.php" method="POST">
+                      <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                        <button class="fa fa-eye btn-sm btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile" name="view"></button>
                       </form>
-                  </div>	
+                  </div>
                   <div class="col-md-6 col-sm-12">
-                    <form action="" method="POST">
-                      <input type="hidden" name="" value="">
-                        <button class="fa fa-trash btn-sm btn-secondary" name="delete"></button>
+                    <form action="teacher-update.php" method="POST">
+                      <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                        <button class="fas fa-pen-nib btn-sm btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Update Profile" name="edit"></button>
+                      </form>
+                  </div>		
+                  <div class="col-md-6 col-sm-12">
+                    <form action="../php/teacherdb_del.php" method="POST">
+                      <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                        <button class="fa fa-trash btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Profile" name="delete" onclick="return Delete()"></button>
                       </form>
                   </div>	
                 </div>
                 </td>
           </tr>
-        
+          <?php 
+					$i++;
+ 
+						}
+					}else{
+						echo '<tr>
+							<td>no record found</td>
+						</tr>';
+					}
+				?>
           </tbody>
           
             </table>
