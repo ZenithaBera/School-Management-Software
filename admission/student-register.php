@@ -1,12 +1,12 @@
-<?php
-session_start();
+<!--<?php
+/*session_start();
 if(isset($_SESSION['name'])){
 	$msg = $_SESSION['name'];
 
 	echo "<script>alert('$msg')</script>";
 }
-session_destroy();
-?>
+session_destroy();*/
+?>-->
 <!DOCTYPE html>
 <html lang="en">
   <head>

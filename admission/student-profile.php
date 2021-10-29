@@ -10,16 +10,16 @@ session_start();
         $sql = "select * from student where id = '$id'";
         $table = mysqli_query($conn,$sql);
         $row = mysqli_fetch_assoc($table);
-    }
+    }/*
     elseif(isset($_SESSION['name'])){
       echo "<script>alert('Register 1st')</script>";
     }
     else{
        echo "Not Registered";
-       /*echo "error".mysqli_error($conn);
-       <script>window.location("student-register.php");</script>*/
+       echo "error".mysqli_error($conn);
+       <script>window.location("student-register.php");</script>
        header("location:student-register.php");
-    }
+    }*/
     session_destroy();
 ?>
 

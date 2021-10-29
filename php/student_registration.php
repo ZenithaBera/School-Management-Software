@@ -22,7 +22,7 @@ session_start();
 
 		$aadhar = $_POST['aadhar'];
 		$document = $_FILES['document']['name'];
-		move_uploaded_file($_FILES['docu']['tmp_name'], "imagemove/".$_FILES['docu']['name']);
+		move_uploaded_file($_FILES['document']['tmp_name'], "imagemove/".$_FILES['document']['name']);
 		$photo = $_FILES['photo']['name'];
 		move_uploaded_file($_FILES['photo']['tmp_name'], "imagemove/".$_FILES['photo']['name']);
         
@@ -40,7 +40,9 @@ session_start();
 
 
         mysqli_query($conn,"insert into student values('','$name','$fname','$mname','$foccu','$moccu','$dob','$gender','$religion','$category','$mobnum','$altnum','$email','$aadhar','$document','$photo','$address','$post','$police','$district','$state','$pin','$class','$section','$roll')");
-		$_SESSION['name'] = "Successfully Registered";
-        header("location:../admission/student-profile.php");
+		/*$_SESSION['name'] = "Successfully Registered";
+        header("location:../admission/student-delete.php");*/
+		echo "<script>alert('Successfully Registered');</script>";
+		echo "<script>window.location='../admission/student-delete.php';</script>";
 	}
 ?>

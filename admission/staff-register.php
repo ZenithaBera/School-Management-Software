@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,9 +31,7 @@
               <h3 class="text-center text-light fw-bold">Staff Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a class="active text-decoration-none bg-warning text-dark fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 
@@ -72,9 +71,7 @@
                       href="#"
                       >Registration</a
                     >
-                    <a class="nav-link fw-bold" href="">Profile</a>
-                    <a class="nav-link fw-bold" href="">Update</a>
-                    <a class="nav-link fw-bold" href="">Delete</a>
+                    <a class="nav-link fw-bold" href="">Profile Details</a>
                   </nav>
                 </div>
               </nav>
@@ -83,7 +80,7 @@
 
           
           <!--Form-->
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="../php/staff_registration.php" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
@@ -93,11 +90,11 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Phone Number: <span>*<span></label>
-            <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="mobnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
-            <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" required>
+            <input type="text" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" required>
           </div>
           
           
@@ -117,7 +114,7 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: <span>*<span></label>
-            <select class="form-select form-control" name="rel" aria-label="Default select example" required>
+            <select class="form-select form-control" name="religion" aria-label="Default select example" required>
           <option selected disabled>Select your religion</option>
           <option value="1">Hindu</option>
           <option value="2">Muslim</option>
@@ -139,7 +136,7 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Position: <span>*<span></label>
-            <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <select class="form-select form-control" name="position" aria-label="Default select example" required>
             <option selected disabled>Select your position</option>
           <option value="1">Principal</option>
           <option value="2">Counsellor</option>
@@ -151,7 +148,7 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Marital Status: <span>*<span></label>
-            <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <select class="form-select form-control" name="mstatus" aria-label="Default select example" required>
             <option selected disabled>Select your status</option>
           <option value="1">Single</option>
           <option value="2">Married</option>
@@ -161,28 +158,28 @@
        
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: <span>*<span></label>
-              <select class="form-select form-control" name="category" aria-label="Default select example" required>
+              <select class="form-select form-control" name="exp" aria-label="Default select example" required>
             <option value="1">Yes</option>
             <option value="2">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
-              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
+              <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
-            <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
+            <input type="email" class="form-control" name="email" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
           </div>
           
         
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Date Of Joining: <span>*<span></label>
-              <input type="date" class="form-control" name="adhar" id="exampleInputName1" required>
+              <input type="date" class="form-control" name="doj" id="exampleInputName1" required>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">CV: <span>*<span></label>
-              <input type="file" class="form-control" name="docu" aria-label="file example" required>
+              <input type="file" class="form-control" name="cv" aria-label="file example" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Photo: <span>*<span></label>
@@ -196,7 +193,7 @@
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Address: <span>*<span></label>
-            <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="address" placeholder="Enter your address" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Post Office: <span>*<span></label>
@@ -209,7 +206,7 @@
 
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">District: <span>*<span></label>
-            <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" required>
+            <input type="text" class="form-control" name="district" placeholder="Enter your district" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">State: <span>*<span></label>
