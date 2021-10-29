@@ -1,3 +1,6 @@
+<?php
+	include '../php/db_teacher.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

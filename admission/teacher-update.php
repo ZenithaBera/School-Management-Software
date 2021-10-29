@@ -1,17 +1,24 @@
+<?php
+	include '../php/db_teacher.php';
+?>
+
+<?php
+
+    if(isset($_POST['edit'])){
+        $id = $_POST['id'];
+
+        $sql = "select * from student where id = '$id'";
+        $table = mysqli_query($conn,$sql);
+        $row = mysqli_fetch_assoc($table);
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,7 +32,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="register.css" />
-    <title>Teacher Register</title>
+    <title>Teacher Update</title>
   </head>
   <body>
     <div class="container-fluid bg-dark text-light overflow-hidden">
@@ -36,16 +43,16 @@
             <nav>
               <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="active text-decoration-none bg-warning text-dark fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a class="text-decoration-none fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
+                <a href="" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
                 <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
             </nav>
         </div>
 
         <div class="col-md-10 col-sm-12">
           <div class="p-4 topbar">
-            <p class="h3 fw-bold">Registration</p>
+            <p class="h3 fw-bold">Update</p>
           </div>
 
 
@@ -58,7 +65,7 @@
                 "
                 aria-label=""
               >
-              <h3 class="navbar-brand justify-content-start fw-bold">Registration</h3>
+              <h3 class="navbar-brand justify-content-start fw-bold">Update</h3>
                 <button
                   class="navbar-toggler bg-warning mb-1"
                   type="button"
@@ -73,56 +80,56 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
                     <a class="nav-link fw-bold" href="">Home</a>
+                    <a class="nav-link fw-bold" href="">Registration</a>
+                    <a class="nav-link fw-bold" href="">Profile</a>
                     <a
                       class="nav-link active bg-warning text-dark fw-bold"
                       aria-current="page"
                       href="#"
-                      >Registration</a
+                      >Update</a
                     >
-                    <a class="nav-link fw-bold" href="">Profile</a>
-                    <a class="nav-link fw-bold" href="">Update</a>
                     <a class="nav-link fw-bold" href="">Delete</a>
                   </nav>
                 </div>
               </nav>
             </div>
           </div>
-
           
+
           <!--Form-->
       <form action="" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Name: <span>*<span></label>
-            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" required>
+            <label for="exampleInputEmail1" class="form-label">Name: </label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Department: <span>*<span></label>
-            <input type="text" class="form-control" name="fname" placeholder="Enter the department" id="exampleInputPassword1" required>
+            <label for="exampleInputPassword1" class="form-label">Department: </label>
+            <input type="text" class="form-control" name="fname" placeholder="Enter the department" id="exampleInputPassword1" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Class: <span>*<span></label>
-            <input type="text" class="form-control" name="mname" placeholder="Enter the class" id="exampleInputPassword1" required>
+            <label for="exampleInputPassword1" class="form-label">Class: </label>
+            <input type="text" class="form-control" name="mname" placeholder="Enter the class" id="exampleInputPassword1" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Phone Number: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Phone Number: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="foccu" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Alternative Number: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="moccup" placeholder="Enter alternative number" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>
-            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" required>
+            <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): </label>
+            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Gender: <span>*<span></label>
-            <select class="form-select form-control" name="gender" aria-label="Default select example" required>
+            <label for="exampleInputEmail1" class="form-label">Gender: </label>
+            <select class="form-select form-control" name="gender" aria-label="Default select example" disabled>
           <option selected disabled>Select your gender</option>
           <option value="1">Male</option>
           <option value="2">Female</option>
@@ -130,8 +137,8 @@
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Religion: <span>*<span></label>
-            <select class="form-select form-control" name="rel" aria-label="Default select example" required>
+            <label for="exampleInputPassword1" class="form-label">Religion: </label>
+            <select class="form-select form-control" name="rel" aria-label="Default select example" disabled>
           <option selected disabled>Select your religion</option>
           <option value="1">Hindu</option>
           <option value="2">Muslim</option>
@@ -141,8 +148,8 @@
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Category: <span>*<span></label>
-            <select class="form-select form-control" name="category" aria-label="Default select example" required>
+            <label for="exampleInputPassword1" class="form-label">Category: </label>
+            <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
           <option selected disabled>Select your category</option>
           <option value="1">General</option>
           <option value="2">OBC / EBC</option>
@@ -151,31 +158,31 @@
           </div>
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-              <label for="exampleInputPassword1" class="form-label">Experienced: <span>*<span></label>
-              <select class="form-select form-control" name="category" aria-label="Default select example" required>
+              <label for="exampleInputPassword1" class="form-label">Experienced: </label>
+              <select class="form-select form-control" name="category" aria-label="Default select example" disabled>
             <option value="1">Yes</option>
             <option value="2">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-              <label for="exampleInputEmail1" class="form-label">Aadhar Number: <span>*<span></label>
-              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" required>
+              <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
+              <input type="text" class="form-control" name="adhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" disabled>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Email Id: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Email Id: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="email" class="form-control" name="mail" placeholder="e.g. sample@gmail.com" id="exampleInputPassword1" required>
           </div>
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-              <label for="exampleInputEmail1" class="form-label">Date Of Joining: <span>*<span></label>
-              <input type="date" class="form-control" name="adhar" id="exampleInputName1" required>
+              <label for="exampleInputEmail1" class="form-label">Date Of Joining: </label>
+              <input type="date" class="form-control" name="adhar" id="exampleInputName1" disabled>
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">CV: <span>*<span></label>
-              <input type="file" class="form-control" name="docu" aria-label="file example" required>
+            <label for="exampleInputPassword1" class="form-label">CV: </label>
+              <input type="file" class="form-control" name="docu" aria-label="file example" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Photo: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Photo: <span><i class="fas fa-pen-nib"></i><span></label>
               <input type="file" class="form-control" name="photo" aria-label="file example" required>
           </div></div>
         
@@ -185,41 +192,41 @@
         
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">Address: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">Address: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="add" placeholder="Enter your address" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Post Office: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Post Office: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="post" placeholder="Enter post office" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Police Station: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Police Station: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="police" placeholder="Enter police station" id="exampleInputPassword1" required>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputEmail1" class="form-label">District: <span>*<span></label>
+            <label for="exampleInputEmail1" class="form-label">District: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="dist" placeholder="Enter your district" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">State: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">State: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="state" placeholder="Enter state" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Pin Code: <span>*<span></label>
+            <label for="exampleInputPassword1" class="form-label">Pin Code: <span><i class="fas fa-pen-nib"></i><span></label>
             <input type="text" class="form-control" name="pin" placeholder="Enter pin code" id="exampleInputPassword1" required>
           </div></div>
         
         
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <span>* Marked fields are compulsory</span></div>
+            <span><i class="fas fa-pen-nib"></i> Marked fields can be updated only</span></div>
         
         <!--Buttons-->
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <button type="submit" name="register" class="btn btn-warning">Register</button>
+            <button type="submit" name="register" class="btn btn-warning">Update</button>
             <button type="reset" class="btn btn-secondary">Reset</button></div>
           </div>
-       
+      
       </form>
         </div>
     </div>
