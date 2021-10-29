@@ -40,10 +40,8 @@
             <nav style="height: 100vh;">
               <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="text-decoration-none fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+                <a class="text-decoration-none fw-bold" href="teacher-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a href="teacher-delete.php" class="tactive text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 
@@ -76,15 +74,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
                     <a class="nav-link fw-bold" href="">Home</a>
-                    <a class="nav-link fw-bold" href="">Registration</a>
-                    <a class="nav-link fw-bold" href="">Profile</a>
-                    <a class="nav-link fw-bold" href="">Update</a>
-                    <a
-                      class="nav-link active bg-warning text-dark fw-bold"
-                      aria-current="page"
-                      href="#"
-                      >Delete</a
-                    >
+                    <a class="nav-link fw-bold" href="teacher-register.php">Registration</a>
+                    <a class="nav-link active bg-warning text-dark fw-bold" href="teacher-delete.php">Profile</a>
+                    
                   </nav>
                 </div>
               </nav>
@@ -94,9 +86,9 @@
           <!--Table-->
           <div class="col-md-12 m-2 p-2 col-sm-12 table-responsive">
             <table class="table table-dark table-hover">
-            <thead>
-            <th>Sl. No.</th>
-            <th>Name</th>
+                  <thead>
+                            <th>Sl. No.</th>
+                            <th>Name</th>
                             <th>Department</th>
                             <th>Class</th>
                             <th>Phone Number</th>
@@ -117,9 +109,9 @@
                             <th>District</th>
                             <th>State</th>
                             <th>Pincode</th>
-                          </thead>
-                          <tbody>
-                              <?php 
+                    </thead>
+                <tbody>
+          <?php 
 					$sql = "select * from teacher";
 					$table = mysqli_query($conn,$sql);
           
@@ -136,7 +128,7 @@
               <td><?php echo $row['altnum']; ?></td>
               <td><?php echo $row['dob']; ?></td>
               <td><?php echo $row['gender']; ?></td>
-               <td><?php echo $row['rel']; ?></td>
+              <td><?php echo $row['rel']; ?></td>
               <td><?php echo $row['category']; ?></td>
               <td><?php echo $row['exp']; ?></td>
               <td><?php echo $row['aadhar']; ?></td>
@@ -144,7 +136,7 @@
               <td><?php echo $row['doj']; ?></td>
               <td><?php echo $row['docu']; ?></td>
               <td><?php echo $row['photo']; ?></td>
-                <td><?php echo $row['address']; ?></td>
+              <td><?php echo $row['address']; ?></td>
               <td><?php echo $row['post']; ?></td>
               <td><?php echo $row['police']; ?></td>
               <td><?php echo $row['dist']; ?></td>

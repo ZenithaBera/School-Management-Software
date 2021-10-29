@@ -76,7 +76,7 @@
                   <nav class="nav flex-column" aria-label="">
                     <a class="nav-link fw-bold" href="">Home</a>
                     <a class="nav-link fw-bold" href="">Registration</a>
-                    <a class="nav-link active bg-warning text-dark fw-bold" href="#">Profile Details</a>
+                    <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">Profile Details</a>
                   </nav>
                 </div>
               </nav>

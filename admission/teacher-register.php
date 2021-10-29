@@ -5,14 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,10 +29,8 @@
             <nav>
               <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="active text-decoration-none bg-warning text-dark fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+                <a class="active text-decoration-none bg-warning text-dark fw-bold" href="teacher-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a href="teacher-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 
@@ -77,12 +67,10 @@
                     <a
                       class="nav-link active bg-warning text-dark fw-bold"
                       aria-current="page"
-                      href="#"
+                      href="teacher-register.php"
                       >Registration</a
                     >
-                    <a class="nav-link fw-bold" href="">Profile</a>
-                    <a class="nav-link fw-bold" href="">Update</a>
-                    <a class="nav-link fw-bold" href="">Delete</a>
+                    <a class="nav-link fw-bold" href="teacher-delete.php">Profile</a>
                   </nav>
                 </div>
               </nav>

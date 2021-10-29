@@ -56,7 +56,7 @@ session_start();
             <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
             <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
               <a class="text-decoration-none fw-bold" href="student-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-              <a href="#" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+              <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
           </nav>
       </div>
 
@@ -94,7 +94,7 @@ session_start();
                   <a
                     class="nav-link active bg-warning text-dark fw-bold"
                     aria-current="page"
-                    href="#"
+                    href="student-delete.php"
                     >Profile Details</a
                   >
                   

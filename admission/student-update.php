@@ -44,7 +44,7 @@
                 <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
                 <a href="" class="text-decoration-none"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                   <a class="text-decoration-none" href="student-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                  <a href="#" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
+                  <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
               </nav>
           </div>
   
@@ -79,7 +79,7 @@
                     <nav class="nav flex-column" aria-label="">
                       <a class="nav-link fw-bold" href="">Home</a>
                       <a class="nav-link fw-bold" href="">Registration</a>
-                      <a class="nav-link active bg-warning text-dark fw-bold" href="">Profile Details</a>
+                      <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">Profile Details</a>
                     
                     </nav>
                   </div>

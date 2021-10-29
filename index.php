@@ -2,56 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    
+    <?php include 'include/link.html'; ?>
+    
     <title>School Management Software</title>
   </head>
   <body>
     <div class="container-fluid p-0 m-0 bg-dark text-light overflow-hidden">
 
       <!--Header-->
-      <div class="row bg-warning">
-        <div class="col-md-1 d-flex justify-content-center col-sm-4">
-          <em class="p-3 border border-5 h2 fas fa-school rounded-circle bg-dark"></em>
-        </div>
-        <div class="col-md-3 d-flex justify-content-center col-sm-8 text-dark">
-          <h3 class="p-3">XYZ School</h3></div>
-        <div class="col-md-8 d-flex justify-content-center col-sm-12">
-          <marquee class="p-3 col-md-9 h3 text-dark" width="" direction="right" height="auto">
-            Admission is going on. Contact us now !!
-          </marquee>
-        </div>
-      </div>
+      <?php include 'include/header.html'; ?>
 
       
       <!--Navbar-->
       <div class="row">
         <div class="col-md-12 col-sm-12 p-4 text-center bg-dark nav1">
           <a
-            href="#"
+            href="index.php"
             aria-current="page"
             class="p-4 active bg-warning text-dark"
             >Home</a
           >
-          <a href="" class="p-4">About Us</a>
-          <a href="" class="p-4">Photo Gallery</a>
-          <a href="" class="p-4">Admission</a>
-          <a href="" class="p-4">Academics</a>
-          <a href="" class="p-4">Infrastructure</a>
-          <a href="" class="p-4">Contact</a>
+          <a href="about-us.php" class="p-4">About Us</a>
+          <a href="photo-gallery.php" class="p-4">Photo Gallery</a>
+          <a href="dashboard/student-dashboard.html" class="p-4">Admission</a>
+          <a href="academics.php" class="p-4">Academics</a>
+          <a href="infrastructure.php" class="p-4">Infrastructure</a>
+          <a href="contact.php" class="p-4">Contact</a>
         </div>
         <div class="col-md-12 col-sm-12 nav2">
           <div class="dropdown">
@@ -79,15 +56,15 @@
                   <a
                     class="nav-link active bg-warning text-dark"
                     aria-current="page"
-                    href="#"
+                    href="index.php"
                     >Home</a
                   >
-                  <a class="nav-link" href="">About Us</a>
-                  <a class="nav-link" href="">Photo Gallery</a>
-                  <a class="nav-link" href="">Admission</a>
-                  <a class="nav-link" href="">Academics</a>
-                  <a class="nav-link" href="">Infrastructure</a>
-                  <a class="nav-link" href="">Contact</a>
+                  <a class="nav-link" href="about-us.php">About Us</a>
+                  <a class="nav-link" href="photo-gallery.php">Photo Gallery</a>
+                  <a class="nav-link" href="dashboard/student-dashbaord.html">Admission</a>
+                  <a class="nav-link" href="academics.php">Academics</a>
+                  <a class="nav-link" href="infrastructure,php">Infrastructure</a>
+                  <a class="nav-link" href="contact.php">Contact</a>
                 </nav>
               </div>
             </nav>
@@ -197,7 +174,7 @@
               <div class="card-body bg-dark">
                 <h5 class="card-title">Class Schedule</h5>
                 <p class="card-text">Check the class schedule properly before classes.</p>
-                <a href="academics.html" class="btn btn-warning" type="button">View More..</a>
+                <a href="academics.php" class="btn btn-warning" type="button">View More..</a>
               </div>
             </div>
           </div>
@@ -243,7 +220,7 @@
               <div class="card-body bg-dark">
                 <h5 class="card-title">Community</h5>
                 <p class="card-text">Join our community to collab with our members.</p>
-                <a href="" class="btn btn-warning" type="button">View More..</a>
+                <a href="contact.php" class="btn btn-warning" type="button">View More..</a>
               </div>
             </div>
           </div>
@@ -288,7 +265,7 @@
                aspernatur quaerat, sunt totam, possimus maxime architecto? Possimus mollitia sequi, 
                voluptate omnis accusantium aperiam quia autem.
               </p>
-              <a href="about.html" type="submit" class="btn btn-warning mt-1"
+              <a href="about-us.php" type="submit" class="btn btn-warning mt-1"
                 >Read More..</a>
               
           </div>
@@ -436,67 +413,9 @@
 
 
     <!--Footer-->
-    <footer class="bd-footer pb-4 pt-5 mt-5 bg-warning">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 mb-1">
-            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-              <em class="h4 fas fa-school"></em>&nbsp;&nbsp;&nbsp;
-              <b class="h4">XYZ School</b>
-            </a>
-            <ul class="list-unstyled small text-muted">
-              <li class="mb-2">Designed and built by Zenitha Bera and Dwaipayan Mitra.</li>
-              <li class="mb-2">Internship at Ardent Computech Pvt. Ltd.</li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-2 offset-md-1 mb-1">
-            <h4 class="text-dark">Links</h4>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class=" text-decoration-none text-secondary">Home</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">About Us</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Photo Gallery</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Admission</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Courses</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">News</a></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-1">
-            <h4 class="text-dark">Contact</h4>
-            <ul class="list-unstyled">
-              <li class="mb-2"><em class="text-secondary fas fa-phone-alt">&nbsp;</em><span class="text-secondary fw-bold">Call:</span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">+91 9XXXXXXXXX</a></li>
-              <li class="mb-2"><em class="text-secondary fas fa-envelope">&nbsp;</em><span class="text-secondary fw-bold">Mail:</span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">sample@gmail.com</a></li>
-              <li class="mb-2"><em class="text-secondary fas fa-map-marker-alt">&nbsp;</em><span class="text-secondary fw-bold">Location:</span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-1">
-            <h4 class="text-dark">Events</h4>
-            <ul class="list-unstyled">
-              <li class="mb-2"><span class="text-secondary"><b>Event 1:</b></span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a></li>
-              <li class="mb-2"><span class="text-secondary"><b>Event 2:</b></span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a></li>
-              <li class="mb-2"><span class="text-secondary"><b>Event 3:</b></span></li>
-              <li class="mb-2"><a href="" class=" text-decoration-none text-secondary">Lorem ipsum, dolor sit amet consectetur.</a></li>
-            </ul>
-          </div>
-        </div><hr class="bg-dark">
-        <div class="row media">
-          <div class="col-md-6 pt-3 col-sm-12 text-center text-dark">
-            &copy; Copyright 2021 XYZ School. All rights reserved.
-          </div>
-          <div class="col-md-6 pt-3 col-sm-12 text-center text-dark">
-            Follow Us: 
-            <a href="#"><em class="text-dark bg-warning px-2 h4 fab fa-facebook-f"></em></a>
-            <a href="#"><em class="text-dark bg-warning px-2 h4 fab fa-instagram"></em></a>
-            <a href="#"><em class="text-dark bg-warning px-2 h4 fab fa-twitter"></em></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include 'include/footer.html'; ?>
+
+
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

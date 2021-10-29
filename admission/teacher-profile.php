@@ -10,15 +10,6 @@ session_start();
         $table = mysqli_query($conn,$sql);
         $row = mysqli_fetch_assoc($table);
     }
-    // elseif(isset($_SESSION['name'])){
-    //   echo "<script>alert('Register 1st')</script>";
-    // }
-    // else{
-    //    echo "Not Registered";
-    //    /*echo "error".mysqli_error($conn);
-    //    <script>window.location("student-register.php");</script>*/
-    //    header("location:teacher-register.php");
-    // }
     session_destroy();
 ?>
 <!DOCTYPE html>
@@ -51,10 +42,8 @@ session_start();
             <nav>
               <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
               <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                <a class="text-decoration-none fw-bold" href=""><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="" class="active text-decoration-none bg-warning text-dark  fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a>
-                <a href="" class="text-decoration-none fw-bold"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a>
+                <a class="text-decoration-none fw-bold" href="teacher-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
+                <a href="teacher-delete.php" class="active text-decoration-none bg-warning text-dark  fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 
@@ -88,15 +77,13 @@ session_start();
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
                     <a class="nav-link fw-bold" href="">Home</a>
-                    <a class="nav-link fw-bold" href="">Registration</a>
+                    <a class="nav-link fw-bold" href="teacher-register.php">Registration</a>
                     <a
                       class="nav-link active bg-warning text-dark fw-bold"
                       aria-current="page"
-                      href="#"
+                      href="teacher-delete.php"
                       >Profile</a
                     >
-                    <a class="nav-link fw-bold" href="">Update</a>
-                    <a class="nav-link fw-bold" href="">Delete</a>
                   </nav>
                 </div>
               </nav>

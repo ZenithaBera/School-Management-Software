@@ -107,3 +107,46 @@ nav a:hover{
         display: none;
     }
 }
+/*contact-us*/
+.adressdetails a,
+.community a {
+  color: #ffff;
+  text-decoration: none;
+}
+.contactus {
+    padding-top: 20px;
+  }
+.map {
+    padding-top: 20px;
+}
+.navhead {
+    border-bottom: 5px solid #ffc107;
+}
+h3 {
+    text-align: center;
+}
+/*about*/
+.imgclass {
+    width: 100;
+    height: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1.02%;
+    background-image: url("images/about/about.jpg");
+  }
+  .imgbus {
+    width: 100;
+    height: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1.02%;
+    background-image: url("images/about/bus.jpg");
+  }
+  .classpic, .buspic {
+    display: none;
+  }
+  .navhead {
+    border-bottom: 5px solid #ffc107;
+  }
