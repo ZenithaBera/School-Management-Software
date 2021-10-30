@@ -33,8 +33,9 @@ session_start();
             <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
             <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
               <a class="text-decoration-none fw-bold" href="student-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-              <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-          </nav>
+              <a href="../dashboard-login/student-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+              <a href="student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>          
+            </nav>
       </div>
 
       <div class="col-md-10 col-sm-12">
@@ -68,12 +69,8 @@ session_start();
                 <nav class="nav flex-column" aria-label="">
                   <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
                   <a class="nav-link fw-bold" href="student-register.php">Registration</a>
-                  <a
-                    class="nav-link active bg-warning text-dark fw-bold"
-                    aria-current="page"
-                    href="student-delete.php"
-                    >Profile Details</a
-                  >
+                  <a class="nav-link active bg-warning text-dark fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
+                    <a class="nav-link fw-bold" href="student-delete.php">For Admin Only</a>
                   
                 </nav>
               </div>

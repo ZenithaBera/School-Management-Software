@@ -189,7 +189,7 @@
   <div class="modal-dialog">
     <div class="modal-content bg-dark">
       <div class="modal-header">
-        <h5 class="modal-title text-warning" id="exampleModalLabel">New message</h5>
+        <h5 class="modal-title text-warning" id="exampleModalLabel">Library Login</h5>
         <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -200,7 +200,7 @@
           </div>
           <div class="mb-3">
             <label for="" class="col-form-label">Student Id:</label>
-            <input type="text" class="form-control bg-secondary text-light opacity-75" name="roll" id="">
+            <input type="number" class="form-control bg-secondary text-light opacity-75" name="id" id="">
           </div>
         
       </div>

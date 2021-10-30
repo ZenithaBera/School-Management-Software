@@ -17,8 +17,8 @@
               <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
               <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="student-register.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-                
+                <a href="../dashboard-login/student-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                <a href="student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
             </nav>
         </div>   
           
@@ -59,7 +59,8 @@
                       href="student-register.php"
                       >Registration</a
                     >
-                    <a class="nav-link fw-bold" href="student-delete.php">Profile Details</a>
+                    <a class="nav-link fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
+                    <a class="nav-link fw-bold" href="student-delete.php">For Admin Only</a>
                     
                   </nav>
                 </div>

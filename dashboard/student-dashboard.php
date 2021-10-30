@@ -21,17 +21,54 @@
           <a class="text-decoration-none fw-bold" href="../admission/student-register.php"
             ><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a
           >
-          <a href="../admission/student-delete.php" class="text-decoration-none fw-bold"
+          <a href="../dashboard-login/student-login.php" class="text-decoration-none fw-bold"
             ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a
           >
-          
+          <a href="../admission/student-delete.php" class="text-decoration-none fw-bold"
+            ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a
+          >
         </nav>
       </div>
 
       <div class="col-md-10 col-sm-12">
-        <div class="p-4 topbar text-light">
-          <p class="h3 fw-bold">Dashboard</p>
-        </div>
+        <div class="p-4 row topbar text-light">
+          <div class="col">
+          <p class="h3 fw-bold float-start">Dashboard</p></div>
+          <div class="col mb-5">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn-sm btn-warning float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Login
+          </button></div></div>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">Login Form</h5>
+        <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="../dashboard-login/student-login.php" method="POST">
+          <div class="mb-3">
+            <label for="" class="col-form-label">Email:</label>
+            <input type="email" class="form-control bg-secondary text-light opacity-75" name="email" id="">
+          </div>
+          <div class="mb-3">
+            <label for="" class="col-form-label">Student Id:</label>
+            <input type="number" class="form-control bg-secondary text-light opacity-75" name="id" id="">
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-warning" name="login">Login</a></form>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    
 
         <div class="col-md-12 col-sm-12 nav2">
           <div class="dropdown">
@@ -68,8 +105,12 @@
                   >
                   <a 
                     class="nav-link fw-bold"
-                    href="../admission/student-delete.php"
+                    href="../dashboard-login/student-login.php"
                   >Profile Details</a>
+                  <a 
+                    class="nav-link fw-bold"
+                    href="../admission/student-delete.php"
+                  >For Admin Only</a>
                 </nav>
               </div>
             </nav>

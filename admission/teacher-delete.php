@@ -140,7 +140,7 @@
                   <div class="col-md-6 col-sm-12">
                     <form action="teacher-update.php" method="POST">
                       <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                        <button class="fas fa-pen-nib btn-sm btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Update Profile" name="edit"></button>
+                        <button class="fas fa-pen-nib btn-sm btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Update Profile" name="edit"></button>
                       </form>
                   </div>		
                   <div class="col-md-6 col-sm-12">

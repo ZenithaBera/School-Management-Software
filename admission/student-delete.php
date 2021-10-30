@@ -6,7 +6,7 @@
   <head>
   <?php include 'includes/top_links.php' ?>
 
-    <title>Student Profile Details | School Management Software</title>
+    <title>Student Records | School Management Software</title>
   </head>
   <script>
 	function Delete(){
@@ -27,14 +27,14 @@
               <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
               <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="student-register.php" class="text-decoration-none fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-                
+                <a href="../dashboard-login/student-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
             </nav>
         </div>
 
         <div class="col-md-10 col-sm-12">
           <div class="p-4 topbar">
-            <p class="h3 fw-bold">Profile Details</p>
+            <p class="h3 fw-bold">Records</p>
           </div>
 
           <div class="col-md-12 col-sm-12 nav2">
@@ -46,7 +46,7 @@
                 "
                 aria-label=""
               >
-              <h3 class="navbar-brand justify-content-start fw-bold">Profile Details</h3>
+              <h3 class="navbar-brand justify-content-start fw-bold">Records</h3>
                 <button
                   class="navbar-toggler bg-warning mb-1"
                   type="button"
@@ -62,7 +62,8 @@
                   <nav class="nav flex-column" aria-label="">
                     <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
                     <a class="nav-link fw-bold" href="student-register.php">Registration</a>
-                    <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">Profile Details</a>
+                    <a class="nav-link fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
+                    <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">For Admin Only</a>
                   </nav>
                 </div>
               </nav>
@@ -147,7 +148,7 @@
                   <div class="col-md-6 col-sm-12">
                     <form action="student-update.php" method="POST">
                       <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                        <button class="fas fa-pen-nib btn-sm btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Update Profile" name="edit"></button>
+                        <button class="fas fa-pen-nib btn-sm btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Update Profile" name="edit"></button>
                       </form>
                   </div>		
                   <div class="col-md-6 col-sm-12">
