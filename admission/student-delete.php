@@ -4,23 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="register.css" />
-    <title>Student Delete</title>
+  <?php include 'includes/top_links.php' ?>
+
+    <title>Student Profile Details | School Management Software</title>
   </head>
   <script>
 	function Delete(){
@@ -39,7 +25,7 @@
         <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
             <nav style="height: 100vh;">
               <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
-              <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+              <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="student-register.php" class="text-decoration-none fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
                 
@@ -48,7 +34,7 @@
 
         <div class="col-md-10 col-sm-12">
           <div class="p-4 topbar">
-            <p class="h3 fw-bold">Delete</p>
+            <p class="h3 fw-bold">Profile Details</p>
           </div>
 
           <div class="col-md-12 col-sm-12 nav2">
@@ -60,7 +46,7 @@
                 "
                 aria-label=""
               >
-              <h3 class="navbar-brand justify-content-start fw-bold">Delete</h3>
+              <h3 class="navbar-brand justify-content-start fw-bold">Profile Details</h3>
                 <button
                   class="navbar-toggler bg-warning mb-1"
                   type="button"
@@ -74,8 +60,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
-                    <a class="nav-link fw-bold" href="">Home</a>
-                    <a class="nav-link fw-bold" href="">Registration</a>
+                    <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
+                    <a class="nav-link fw-bold" href="student-register.php">Registration</a>
                     <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">Profile Details</a>
                   </nav>
                 </div>

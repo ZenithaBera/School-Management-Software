@@ -1,54 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=`, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="../admission/register.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-    <title>Teacher Dashboard</title>
+  <?php include 'includeFiles/top_links.php'; ?>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Staff Dashboard | School Management Software</title>
   </head>
   <body>
     <div class="container-fluid p-0 m-0 bg-dark text-light overflow-hidden">
     <div class="row">
       <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
         <nav>
-          <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
+          <h3 class="text-center text-light fw-bold">Staff Dashboard</h3>
           <a
-            href=""
+            href="staff-dashboard.php"
             class="active text-decoration-none bg-warning text-dark fw-bold"
             ><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a
           >
-          <a class="text-decoration-none fw-bold" href=""
+          <a class="text-decoration-none fw-bold" href="../admission/staff-register.php"
             ><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a
           >
-          <a href="" class="text-decoration-none fw-bold"
-            ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile</a
+          <a href="../admission/staff-delete.php" class="text-decoration-none fw-bold"
+            ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a
           >
-          <a href="" class="text-decoration-none fw-bold"
-            ><i class="fas fa-user-edit"></i>&nbsp;&nbsp;&nbsp;Update</a
-          >
-          <a href="" class="text-decoration-none fw-bold"
-            ><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;Delete</a
-          >
+          
         </nav>
       </div>
 
@@ -81,18 +57,16 @@
                 <nav class="nav flex-column" aria-label="">
                   <a
                     class="nav-link active bg-warning text-dark fw-bold"
-                    href=""
+                    href="staff-dashboard.php"
                     >Home</a
                   >
+                  <a class="nav-link fw-bold" href="../admission/staff-register.php">Registration</a>
                   <a
-                    class="nav-link active fw-bold"
+                    class="nav-link fw-bold"
                     aria-current="page"
-                    href="#"
-                    >Registration</a
+                    href="../admission/staff-delete.php"
+                    >Profile Details</a
                   >
-                  <a class="nav-link fw-bold" href="">Profile</a>
-                  <a class="nav-link fw-bold" href="">Update</a>
-                  <a class="nav-link fw-bold" href="">Delete</a>
                 </nav>
               </div>
             </nav>
@@ -103,18 +77,18 @@
         <!--Cards-->
         <div class="row m-2 mt-4 d-flex justify-content-center">
           <div class="card bg-dark mb-3 mx-2 border border-warning text-center" style="max-width: 18rem;">
-              <div class="card-header mt-3 text-warning "><i class="fas fa-chalkboard-teacher h1"></i></div>
+              <div class="card-header mt-3 text-warning "><i class="fas fa-hands h1"></i></div>
               <div class="card-body">
-                <h5 class="card-title h3">Classes</h5>
-                <p class="card-text h4">10 per week</p>
+                <h5 class="card-title h3">Teamwork</h5>
+                <p class="card-text h4">Mandatory</p>
               </div>
             </div>
 
 
             <div class="card bg-dark mb-3 mx-2 border border-warning text-center" style="max-width: 18rem;">
-              <div class="card-header mt-3 text-warning "><i class="fas fa-book-reader h1"></i></div>
+              <div class="card-header mt-3 text-warning "><i class="fas fa-file-alt h1"></i></div>
               <div class="card-body">
-                <h5 class="card-title h3">Course</h5>
+                <h5 class="card-title h3">Report</h5>
                 <p class="card-text h4">1 per month</p>
               </div>
             </div>
@@ -122,8 +96,8 @@
             <div class="card bg-dark mb-3 mx-2 border border-warning text-center" style="max-width: 18rem;">
               <div class="card-header mt-3 text-warning "><i class="fas fa-handshake h1"></i></div>
               <div class="card-body">
-                <h5 class="card-title h3">Meeting</h5>
-                <p class="card-text h4">1 Compulsory</p>
+                <h5 class="card-title h3">Meetings</h5>
+                <p class="card-text h4">4-5 per month</p>
               </div>
             </div>
 
@@ -141,10 +115,10 @@
         <!--Chart and Calendar-->
         <div class="row m-2">
           <!--Bar Chart-->
-          <div class="container chart col-md-5 col-sm-12 bg-dark" style="padding-top: 20px">
+          <div class="container chart col-md-5 col-sm-12 bg-dark mt-1" style="padding-top: 20px">
             <canvas id="myChart1" class="border border-warning" style="width:100%;"></canvas>
             <!--Pie Chart-->
-            <canvas id="myChart" class="border border-warning mt-2 pb-1" style="width:100%;"></canvas>
+            <canvas id="myChart" class="border border-warning mt-4 pb-1" style="width:100%;"></canvas>
           </div>
 
 
@@ -274,5 +248,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="teacher-dashboard.js"></script>
+  <script src="staff-dashboard.js"></script>
 </html>

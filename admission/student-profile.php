@@ -10,16 +10,7 @@ session_start();
         $sql = "select * from student where id = '$id'";
         $table = mysqli_query($conn,$sql);
         $row = mysqli_fetch_assoc($table);
-    }/*
-    elseif(isset($_SESSION['name'])){
-      echo "<script>alert('Register 1st')</script>";
     }
-    else{
-       echo "Not Registered";
-       echo "error".mysqli_error($conn);
-       <script>window.location("student-register.php");</script>
-       header("location:student-register.php");
-    }*/
     session_destroy();
 ?>
 
@@ -27,23 +18,9 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="register.css" />
-    <title>Student Profile</title>
+  <?php include 'includes/top_links.php' ?>
+
+    <title>Student Profile | School Management Software</title>
   </head>
   <body>
     <div class="container-fluid bg-dark text-light overflow-hidden">
@@ -54,7 +31,7 @@ session_start();
       <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
           <nav>
             <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
-            <a href="" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+            <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
               <a class="text-decoration-none fw-bold" href="student-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
               <a href="student-delete.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
           </nav>
@@ -89,7 +66,7 @@ session_start();
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <nav class="nav flex-column" aria-label="">
-                  <a class="nav-link fw-bold" href="">Home</a>
+                  <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
                   <a class="nav-link fw-bold" href="student-register.php">Registration</a>
                   <a
                     class="nav-link active bg-warning text-dark fw-bold"

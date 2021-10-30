@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     
-    <?php include 'include/link.html'; ?>
+    <?php include 'include/link.php'; ?>
 
     <title>Academics | School Management Software</title>
   </head>
@@ -16,7 +16,7 @@
           <a href="index.php" class="p-4">Home</a>
           <a href="about-us.php" class="p-4">About Us</a>
           <a href="photo-gallery.php" class="p-4">Photo Gallery</a>
-          <a href="dashboard/student-dashboard.html" class="p-4">Admission</a>
+          <a href="dashboard/student-dashboard.php" class="p-4">Admission</a>
           <a
             href="academics.php"
             aria-current="page"
@@ -52,7 +52,7 @@
                   <a class="nav-link" href="index.php">Home</a>
                   <a class="nav-link" href="about-us.php">About Us</a>
                   <a class="nav-link" href="photo-gallery.php">Photo Gallery</a>
-                  <a class="nav-link" href="dashboard/student-dashboard.html">Admission</a>
+                  <a class="nav-link" href="dashboard/student-dashboard.php">Admission</a>
                   <a
                     class="nav-link active bg-warning text-dark"
                     aria-current="page"
