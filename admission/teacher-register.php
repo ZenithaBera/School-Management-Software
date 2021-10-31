@@ -16,8 +16,9 @@
               <h3 class="text-center text-light fw-bold">Teacher Dashboard</h3>
               <a href="../dashboard/teacher-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a class="active text-decoration-none bg-warning text-dark fw-bold" href="teacher-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
-                <a href="teacher-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-            </nav>
+                <a href="../dashboard-login/teacher-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                <a href="teacher-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
+              </nav>
         </div>
 
         <div class="col-md-10 col-sm-12">
