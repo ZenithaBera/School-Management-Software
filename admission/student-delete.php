@@ -74,7 +74,7 @@
           <div class="col-md-12 m-2 p-2 col-sm-12 table-responsive">
             <table class="table table-dark table-hover">
             <thead>
-              <th>Sl. No.</th>
+              <th>Id</th>
               <th>Name</th>
               <th>Father's Name</th>
               <th>Mother's Name</th>

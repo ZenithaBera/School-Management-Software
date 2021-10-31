@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
   
-    <?php include '../include/link.php'; ?>
-    <link href="../index.css" rel="stylesheet" type="text/css" />
+    <?php include 'lib_include/link.php'; ?>
+    
     <link href="library.css" rel="stylesheet" type="text/css" />
     <title>School Management Software</title>
   </head>
@@ -296,7 +296,7 @@
 
       <!--Footer-->
     
-      <?php include '../include/footer.html'; ?>
+      <?php include 'lib_include/footer.html'; ?>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

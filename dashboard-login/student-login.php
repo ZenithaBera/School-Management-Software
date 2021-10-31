@@ -166,7 +166,7 @@ include('../php/db_student.php');
                 </td>
           </tr> 
           <?php 
-					//$i++;
+				
 
 						}
 					
