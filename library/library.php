@@ -13,7 +13,7 @@
       <div class="row common">
         <div class="col-md-12 col-sm-12 p-4 text-center bg-dark nav1">
           <a
-            href="#"
+            href="../index.php"
             aria-current="page"
             class="p-4"
             >Home</a
