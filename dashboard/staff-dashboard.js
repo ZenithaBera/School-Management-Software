@@ -1,60 +1,57 @@
 //Bar Chart
 var xValues = ["Technical", "Publishing", "Accounts", "HR", "Others"];
-var yValues = [55, 49, 44, 30, 24];
-var barColors = [
-  "#ffc107",
-  "#FBFF00",
-  "#FF9300",
-  "#FFD371",
-  "#FC5404"
-];
+var yValues = [55, 49, 60, 45, 24];
+var barColors = ["#ffc107", "#FBFF00", "#FF9300", "#FFD371", "#FC5404"];
 
 new Chart("myChart1", {
   type: "bar",
   data: {
     labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
+    datasets: [
+      {
+        backgroundColor: barColors,
+        data: yValues,
+      },
+    ],
   },
   options: {
-    legend: {display: false},
+    legend: { display: false },
     title: {
       display: true,
-      text: "Overall Departments Status"
-    }
-  }
+      text: "Overall Departments Status",
+    },
+  },
 });
 
 //Pie Chart
-var xValues = ["Teamwork", "Report Submission", "Meeting Deadline", "Communication Skills", "Punctuality"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = [
-  "#ffc107",
-  "#FBFF00",
-  "#FF9300",
-  "#FFD371",
-  "#FC5404"
+var xValues = [
+  "Teamwork",
+  "Report Submission",
+  "Meeting Deadline",
+  "Communication Skills",
+  "Punctuality",
 ];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["#ffc107", "#FBFF00", "#FF9300", "#FFD371", "#FC5404"];
 
 new Chart("myChart", {
   type: "doughnut",
   data: {
     labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
+    datasets: [
+      {
+        backgroundColor: barColors,
+        data: yValues,
+      },
+    ],
   },
   options: {
     title: {
       display: true,
-      text: "Overall Performance"
-    }
-  }
+      text: "Overall Performance",
+    },
+  },
 });
-
 
 // Calender
 today = new Date();

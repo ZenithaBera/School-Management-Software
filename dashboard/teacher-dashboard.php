@@ -288,4 +288,11 @@
     crossorigin="anonymous"
   ></script>
   <script src="teacher-dashboard.js"></script>
+   <script type="text/javascript" language="javascript">  
+    var versionUpdate = (new Date()).getTime();  
+    var script = document.createElement("script");  
+    script.type = "text/javascript";  
+    script.src = "teacher-dashboard.js?v=" + versionUpdate;  
+    document.body.appendChild(script);  
+</script>
 </html>
