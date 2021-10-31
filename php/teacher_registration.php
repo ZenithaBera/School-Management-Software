@@ -33,7 +33,7 @@ if(isset($_POST['register'])){
     // $_SESSION['name'] = "Successfully Registered";
     // header("location:../admission/teacher-profile.php");
     echo "<script>alert('Successfully Registered');</script>";
-		echo "<script>window.location='../admission/teacher-delete.php';</script>";
+		// echo "<script>window.location='../admission/teacher-delete.php';</script>";
 
 }
 

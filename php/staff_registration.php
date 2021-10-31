@@ -39,6 +39,6 @@ session_start();
 		//$_SESSION['name'] = "Successfully Registered";
         //header("location:../admission/staff-delete.php");
 		echo "<script>alert('Successfully Registered');</script>";
-		echo "<script>window.location='../admission/staff-delete.php';</script>";
+		// echo "<script>window.location='../admission/staff-delete.php';</script>";
 	}
 ?>
