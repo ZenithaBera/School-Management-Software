@@ -30,10 +30,9 @@ if(isset($_POST['register'])){
 		$pin = $_POST['pin']; 
 
     mysqli_query($conn,"insert into teacher values('','$name','$dept','$class','$phnnum','$altnum','$dob','$gender','$rel','$category','$exp','$aadhar','$email','$doj','$docu','$photo','$address','$post','$police','$dist','$state','$pin')");
-    // $_SESSION['name'] = "Successfully Registered";
-    // header("location:../admission/teacher-profile.php");
+    
     echo "<script>alert('Successfully Registered');</script>";
-		// echo "<script>window.location='../admission/teacher-delete.php';</script>";
+		echo "<script>window.location='../dashboard/teacher-dashboard.php';</script>";
 
 }
 

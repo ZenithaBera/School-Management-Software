@@ -104,7 +104,7 @@
                     class="nav-link fw-bold"
                     href="../admission/teacher-delete.php"
                   >For Admin Only</a>
-                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link btn-btn-warning fw-bold">Login</a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link fw-bold">Login</a>
                 </nav>
               </div>
             </nav>

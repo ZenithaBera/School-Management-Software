@@ -40,9 +40,8 @@ session_start();
 
 
         mysqli_query($conn,"insert into student values('','$name','$fname','$mname','$foccu','$moccu','$dob','$gender','$religion','$category','$mobnum','$altnum','$email','$aadhar','$document','$photo','$address','$post','$police','$district','$state','$pin','$class','$section','$roll')");
-		/*$_SESSION['name'] = "Successfully Registered";
-        header("location:../admission/student-delete.php");*/
+		
 		echo "<script>alert('Successfully Registered');</script>";
-		echo "<script>window.location='../admission/student-delete.php';</script>";
+		echo "<script>window.location='../dashboard/student-dashboard.php';</script>";
 	}
 ?>
