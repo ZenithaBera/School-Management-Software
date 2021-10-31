@@ -63,7 +63,7 @@
                   <a class="nav-link" href="photo-gallery.php">Photo Gallery</a>
                   <a class="nav-link" href="dashboard/student-dashboard.php">Admission</a>
                   <a class="nav-link" href="academics.php">Academics</a>
-                  <a class="nav-link" href="infrastructure,php">Infrastructure</a>
+                  <a class="nav-link" href="infrastructure.php">Infrastructure</a>
                   <a class="nav-link" href="contact.php">Contact</a>
                 </nav>
               </div>

@@ -12,7 +12,7 @@ include('db_student.php');
     {
         echo '<script type="text/JavaScript"> alert("Successfully logged in");</script>';   
         echo '<script type="text/javascript">
-			window.location="../library/library.html";
+			window.location="../library/library.php";
 		</script>';   
     }
     else{
