@@ -36,9 +36,7 @@ session_start();
 
 
         mysqli_query($conn,"insert into staff values('','$name','$mobnum','$altnum','$dob','$gender','$religion','$category','$position','$mstatus','$exp','$aadhar','$email','$doj','$cv','$photo','$address','$post','$police','$district','$state','$pin')");
-		//$_SESSION['name'] = "Successfully Registered";
-        //header("location:../admission/staff-delete.php");
+		
 		echo "<script>alert('Successfully Registered');</script>";
-		echo "<script>window.location='../admission/staff-delete.php';</script>";
 	}
 ?>

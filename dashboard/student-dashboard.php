@@ -111,6 +111,8 @@
                     class="nav-link fw-bold"
                     href="../admission/student-delete.php"
                   >For Admin Only</a>
+                  <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link text-light fw-bold">Login</a>
+
                 </nav>
               </div>
             </nav>
