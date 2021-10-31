@@ -38,5 +38,7 @@ session_start();
         mysqli_query($conn,"insert into staff values('','$name','$mobnum','$altnum','$dob','$gender','$religion','$category','$position','$mstatus','$exp','$aadhar','$email','$doj','$cv','$photo','$address','$post','$police','$district','$state','$pin')");
 		
 		echo "<script>alert('Successfully Registered');</script>";
+		echo "<script>window.location='../dashboard/staff-dashboard.php';</script>";
+
 	}
 ?>

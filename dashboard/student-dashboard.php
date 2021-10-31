@@ -25,7 +25,7 @@
             ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a
           >
           <a href="../admission/student-delete.php" class="text-decoration-none fw-bold"
-            ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a
+            ><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a
           >
         </nav>
       </div>
@@ -111,7 +111,7 @@
                     class="nav-link fw-bold"
                     href="../admission/student-delete.php"
                   >For Admin Only</a>
-                  <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link text-light fw-bold">Login</a>
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link fw-bold">Login</a>
 
                 </nav>
               </div>
