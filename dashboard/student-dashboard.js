@@ -1,6 +1,6 @@
 //Bar Chart
 var xValues = ["English", "Science", "Maths", "History", "Hindi"];
-var yValues = [55, 49, 32, 30, 24];
+var yValues = [55, 49, 40, 30, 24];
 var barColors = ["#ffc107", "#FBFF00", "#FF9300", "#FFD371", "#FC5404"];
 
 new Chart("myChart1", {

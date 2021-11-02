@@ -26,7 +26,7 @@
 
 		if(mysqli_query($conn,$sql)){
 			echo "<script>alert('Data Updated');</script>";
-			echo '<script>window.location="../admission/staff-delete.php";</script>';
+			echo '<script>window.location="../dashboard/staff-dashboard.php";</script>';
 		}else{
 			echo "error".mysqli_error($conn);
 		}
