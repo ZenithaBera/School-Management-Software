@@ -142,7 +142,7 @@
                       </form>
                   </div>		
                   <div class="col-md-6 col-sm-12">
-                    <form action="../php/staffdb_del.php" method="POST">
+                    <form action="staffdb_del.php" method="POST">
                       <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                         <button class="fa fa-trash btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Profile" name="delete" onclick="return Delete()"></button>
                       </form>

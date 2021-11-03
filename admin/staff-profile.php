@@ -28,9 +28,9 @@ session_start();
       <div class="row">
         <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
             <nav>
-            <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
-            <a href="staff-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;Records</a>
-                <a href="staff-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+            <h3 class="text-center text-light fw-bold">Staff Admin</h3>
+            <a href="staff-admin.php" class="text-decoration-none fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;Records</a>
+                <a href="staff-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 

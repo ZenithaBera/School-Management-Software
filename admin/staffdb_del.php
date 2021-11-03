@@ -1,5 +1,5 @@
 <?php
-	include 'db_staff.php';
+	include '../php/db_staff.php';
 
 	if(isset($_POST['delete'])){
 		$id = $_POST['id'];
