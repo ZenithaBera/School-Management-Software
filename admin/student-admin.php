@@ -24,11 +24,11 @@
       <div class="row">
         <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
             <nav style="height: 100vh;">
-              <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
+              <h3 class="text-center text-light fw-bold">Student Admin</h3>
               <!--<a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="student-register.php" class="text-decoration-none fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>-->
-                <a href="student-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;Records</a>
-                <a href="student-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                <a href="student-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-clipboard"></i>&nbsp;&nbsp;&nbsp;Records</a>
+                <a href="student-dummy.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>
         </div>
 
@@ -60,10 +60,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
-                    <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
-                    <a class="nav-link fw-bold" href="student-register.php">Registration</a>
-                    <a class="nav-link fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
-                    <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">For Admin Only</a>
+                    
+                    <a class="nav-link active bg-warning text-dark fw-bold" href="student-admin.php">Records</a>
+                    <a class="nav-link fw-bold" href="student-dummy.php">Profile Details</a>
+
                   </nav>
                 </div>
               </nav>
