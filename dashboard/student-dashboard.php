@@ -31,7 +31,7 @@
       </div>
 
       <div class="col-md-10 col-sm-12">
-        <div class="p-4 row topbar text-light">
+        <div class="p-4 topbar text-light">
           <div class="col">
           <p class="h3 fw-bold float-start">Dashboard</p></div>
           <div class="col mb-5">
