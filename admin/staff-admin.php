@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
             <nav style="height: 100vh;">
-              <h3 class="text-center text-light fw-bold">Staff Dashboard</h3>
+              <h3 class="text-center text-light fw-bold">Staff Admin</h3>
               <a href="staff-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-clipboard"></i>&nbsp;&nbsp;&nbsp;Records</a>
                 <a href="staff-dummy.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
             </nav>

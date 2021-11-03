@@ -77,7 +77,7 @@
 
           <!--Form-->
           <form action="staffdb_upd.php" method="POST" enctype="multipart/form-data">
-      -center mt-5">Personal Details</h4><hr>
+          Personal Details</h4><hr>
         <div class="row">
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">

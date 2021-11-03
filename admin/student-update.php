@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
               <nav>
-                <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
+                <h3 class="text-center text-light fw-bold">Student Admin</h3>
                 <a href="student-admin.php" class="active text-decoration-none fw-bold"><i class="fas fa-clipboard"></i>&nbsp;&nbsp;&nbsp;Records</a>
                 <a href="student-dummy.php" class="text-decoration-none fw-bold bg-warning text-dark"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
 
