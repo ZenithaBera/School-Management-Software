@@ -28,8 +28,8 @@
           <div class="col-md-2 col-sm-12 sidepanel m-0 p-0 border border-warning">
               <nav>
                 <h3 class="text-center text-light fw-bold">Student Dashboard</h3>
-                <a href="student-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;Records</a>
-                <a href="student-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
+                <a href="student-admin.php" class="active text-decoration-none fw-bold"><i class="fas fa-clipboard"></i>&nbsp;&nbsp;&nbsp;Records</a>
+                <a href="student-dummy.php" class="text-decoration-none fw-bold bg-warning text-dark"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
 
               </nav>
           </div>
@@ -63,10 +63,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <nav class="nav flex-column" aria-label="">
-                      <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
-                      <a class="nav-link fw-bold" href="student-register.php">Registration</a>
-                      <a class="nav-link fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
-                      <a class="nav-link active bg-warning text-dark fw-bold" href="student-delete.php">For Admin Only</a>
+                    <a class="nav-link fw-bold" href="student-admin.php">Records</a>
+                    <a class="nav-link fw-bold active bg-warning text-dark" href="student-dummy.php">Profile Details</a>
 
                     </nav>
                   </div>
@@ -82,34 +80,34 @@
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Name: </label>
-            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" value="<?php echo $row['name']; ?>" disabled>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1" value="<?php echo $row['name']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Father's Name: </label>
-            <input type="text" class="form-control" name="fname" placeholder="Enter your father's name" id="exampleInputPassword1" value="<?php echo $row['fname']; ?>" disabled>
+            <input type="text" class="form-control" name="fname" placeholder="Enter your father's name" id="exampleInputPassword1" value="<?php echo $row['fname']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Mother's Name: </label>
-            <input type="text" class="form-control" name="mname" placeholder="Enter your mother's name" id="exampleInputPassword1" value="<?php echo $row['mname']; ?>" disabled>
+            <input type="text" class="form-control" name="mname" placeholder="Enter your mother's name" id="exampleInputPassword1" value="<?php echo $row['mname']; ?>" required>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Father's Occupation: </label>
-            <input type="text" class="form-control" name="foccu" placeholder="Enter your father's occupation" id="exampleInputName1" value="<?php echo $row['foccu']; ?>" disabled>
+            <input type="text" class="form-control" name="foccu" placeholder="Enter your father's occupation" id="exampleInputName1" value="<?php echo $row['foccu']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Mother's Occupation: </label>
-            <input type="text" class="form-control" name="moccu" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" value="<?php echo $row['moccu']; ?>" disabled>
+            <input type="text" class="form-control" name="moccu" placeholder="Enter your mother's occupation:" id="exampleInputPassword1" value="<?php echo $row['moccu']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): </label>
-            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" value="<?php echo $row['dob']; ?>" disabled>
+            <input type="date" class="form-control" name="dob" id="exampleInputPassword1" value="<?php echo $row['dob']; ?>" required>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
-            <select class="form-select" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>" disabled>
-          <option selected disabled>Select your gender</option>
+            <select class="form-select" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>" required>
+          <option selected required>Select your gender</option>
           <option value="1">Male</option>
           <option value="2">Female</option>
           <option value="3">Others</option>
@@ -117,8 +115,8 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
-            <select class="form-select" name="religion" aria-label="Default select example" value="<?php echo $row['religion']; ?>" disabled>
-          <option selected disabled>Select your religion</option>
+            <select class="form-select" name="religion" aria-label="Default select example" value="<?php echo $row['religion']; ?>" required>
+          <option selected required>Select your religion</option>
           <option value="1">Hindu</option>
           <option value="2">Muslim</option>
           <option value="3">Sikh</option>
@@ -128,8 +126,8 @@
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: </label>
-            <select class="form-select" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>" disabled>
-          <option selected disabled>Select your category</option>
+            <select class="form-select" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>" required>
+          <option selected required>Select your category</option>
           <option value="1">General</option>
           <option value="2">OBC / EBC</option>
           <option value="3">SC / ST</option>
@@ -151,11 +149,11 @@
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
-            <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" value="<?php echo $row['aadhar']; ?>" disabled>
+            <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1" value="<?php echo $row['aadhar']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Document: </label>
-              <input type="file" class="form-control" name="document" aria-label="file example" value="<?php echo $row['document']; ?>" disabled>
+              <input type="file" class="form-control" name="document" aria-label="file example" value="<?php echo $row['document']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Photo: <span><i class="fas fa-pen-nib"></i><span></label>
@@ -200,15 +198,15 @@
           <div class="row">
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Class: </label>
-            <input type="text" class="form-control" name="class" placeholder="Enter your class" id="exampleInputName1" value="<?php echo $row['class']; ?>" disabled>
+            <input type="text" class="form-control" name="class" placeholder="Enter your class" id="exampleInputName1" value="<?php echo $row['class']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Section: </label>
-            <input type="text" class="form-control" name="section" placeholder="Enter your section" id="exampleInputPassword1" value="<?php echo $row['section']; ?>" disabled>
+            <input type="text" class="form-control" name="section" placeholder="Enter your section" id="exampleInputPassword1" value="<?php echo $row['section']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Roll Number: </label>
-            <input type="text" class="form-control" name="roll" placeholder="Enter your roll number" id="exampleInputPassword1" value="<?php echo $row['roll']; ?>" disabled>
+            <input type="text" class="form-control" name="roll" placeholder="Enter your roll number" id="exampleInputPassword1" value="<?php echo $row['roll']; ?>" required>
           </div></div>
         
         
