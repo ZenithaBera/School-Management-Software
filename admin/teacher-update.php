@@ -63,10 +63,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <nav class="nav flex-column" aria-label="">
-                      <a class="nav-link fw-bold" href="../dashboard/teacher-dashboard.php">Home</a>
-                      <a class="nav-link fw-bold" href="teacher-register.php">Registration</a>
-                      <a class="nav-link fw-bold" href="../dashboard-login/teacher-login.php">Profile Details</a>
-                      <a class="nav-link active bg-warning text-dark fw-bold" href="teacher-delete.php">For Admin Only</a>
+                      <a href="teacher-admin.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;Records</a>
+                <a href="teacher-login.php" class="text-decoration-none fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
 
                     </nav>
                   </div>

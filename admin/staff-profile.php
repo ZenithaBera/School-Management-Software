@@ -63,15 +63,8 @@ session_start();
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <nav class="nav flex-column" aria-label="">
-                    <a class="nav-link fw-bold" href="../dashboard/staff-dashboard.php">Home</a>
-                    <a class="nav-link fw-bold" href="../admission/staff-register.php">Registration</a>
-                    <a
-                      class="nav-link active bg-warning text-dark fw-bold"
-                      aria-current="page"
-                      href="../dashboard-login/staff-login.php"
-                      >Profile Details</a
-                    >
-                    <a class="nav-link fw-bold" href="../admission/staff-delete.php">For Admin Only</a>
+                   <a class="nav-link fw-bold" href="staff-admin.php">Records</a>
+                    <a class="nav-link fw-bold  active bg-warning text-dark" href="staff-dummy.php">Profile Details</a>
                   </nav>
                 </div>
               </nav>
