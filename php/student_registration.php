@@ -35,11 +35,11 @@ session_start();
 		$pin = $_POST['pin'];
 
 		$class = $_POST['class'];
-		$section = $_POST['section'];
-		$roll = $_POST['roll'];
+		$shift = $_POST['shift'];
+		$bus = $_POST['bus'];
 
 
-        mysqli_query($conn,"insert into student values('','$name','$fname','$mname','$foccu','$moccu','$dob','$gender','$religion','$category','$mobnum','$altnum','$email','$aadhar','$document','$photo','$address','$post','$police','$district','$state','$pin','$class','$section','$roll')");
+        mysqli_query($conn,"insert into student values('','$name','$fname','$mname','$foccu','$moccu','$dob','$gender','$religion','$category','$mobnum','$altnum','$email','$aadhar','$document','$photo','$address','$post','$police','$district','$state','$pin','$class','$shift','$bus')");
 		
 		echo "<script>alert('Successfully Registered');</script>";
 		echo "<script>window.location='../dashboard/student-dashboard.php';</script>";

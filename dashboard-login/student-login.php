@@ -28,7 +28,6 @@ include('../php/db_student.php');
               <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="../admission/student-register.php" class="text-decoration-none fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="student-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-                <a href="../admission/student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
                 
             </nav>
         </div>
@@ -64,7 +63,6 @@ include('../php/db_student.php');
                     <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
                     <a class="nav-link fw-bold" href="../admission/student-register.php">Registration</a>
                     <a class="nav-link active bg-warning text-dark fw-bold" href="student-login.php">Profile Details</a>
-                    <a class="nav-link fw-bold" href="../admission/student-delete.php">For Admin Only</a>
                   </nav>
                 </div>
               </nav>
@@ -109,8 +107,8 @@ include('../php/db_student.php');
               <th>State</th>
               <th>Pin Code</th>
               <th>Class</th>
-              <th>Section</th>
-              <th>Roll Number</th>
+              <th>Shift</th>
+              <th>School Bus</th>
               <th>Action</th>
           </thead>
           <tbody>
@@ -144,8 +142,8 @@ include('../php/db_student.php');
               <td><?php echo $row['state']; ?></td>
               <td><?php echo $row['pin']; ?></td>
               <td><?php echo $row['class']; ?></td>
-              <td><?php echo $row['section']; ?></td>
-              <td><?php echo $row['roll']; ?></td>
+              <td><?php echo $row['shift']; ?></td>
+              <td><?php echo $row['bus']; ?></td>
         
               <td>
                 <div class="row">

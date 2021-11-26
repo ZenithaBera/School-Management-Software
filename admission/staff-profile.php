@@ -32,7 +32,6 @@ session_start();
               <a href="../dashboard/staff-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a class="text-decoration-none fw-bold" href="staff-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="../dashboard-login/staff-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-                <a href="staff-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
             </nav>
         </div>
 
@@ -73,7 +72,6 @@ session_start();
                       href="../dashboard-login/staff-login.php"
                       >Profile Details</a
                     >
-                    <a class="nav-link fw-bold" href="staff-delete.php">For Admin Only</a>
                   </nav>
                 </div>
               </nav>
@@ -113,63 +111,30 @@ session_start();
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
-            <select class="form-select form-control" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>" disabled>
-          <option selected disabled>Select your gender</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-          <option value="3">Others</option>
-        </select>
+            <input type="text" class="form-control" name="gender" id="" value="<?php echo $row['gender']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
-            <select class="form-select form-control" name="religion" aria-label="Default select example" value="<?php echo $row['religion']; ?>" disabled>
-          <option selected disabled>Select your religion</option>
-          <option value="1">Hindu</option>
-          <option value="2">Muslim</option>
-          <option value="3">Sikh</option>
-          <option value="4">Christian</option>
-          <option value="5">Others</option>
-        </select>
+            <input type="text" class="form-control" name="religion" id="" value="<?php echo $row['religion']; ?>" disabled>
           </div>
         
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: </label>
-            <select class="form-select form-control" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>" disabled>
-          <option selected disabled>Select your category</option>
-          <option value="1">General</option>
-          <option value="2">OBC / EBC</option>
-          <option value="3">SC / ST</option>
-        </select>
+            <input type="text" class="form-control" name="category" id="" value="<?php echo $row['category']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Position: </label>
-            <select class="form-select form-control" name="position" aria-label="Default select example" value="<?php echo $row['position']; ?>" disabled>
-            <option selected disabled>Select your position</option>
-          <option value="1">Principal</option>
-          <option value="2">Counsellor</option>
-          <option value="3">Nurse</option>
-          <option value="4">Registrar</option>
-          <option value="5">Accountant</option>
-          <option value="4">Secretary</option>
-        </select>
+            <input type="text" class="form-control" name="position" id="" value="<?php echo $row['position']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Marital Status: </label>
-            <select class="form-select form-control" name="mstatus" aria-label="Default select example" value="<?php echo $row['mstatus']; ?>" disabled>
-            <option selected disabled>Select your status</option>
-          <option value="1">Single</option>
-          <option value="2">Married</option>
-          <option value="3">Divorced</option>
-        </select>
+            <input type="text" class="form-control" name="mstatus" id="" value="<?php echo $row['mstatus']; ?>" disabled>
           </div>
        
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: </label>
-              <select class="form-select form-control" name="exp" aria-label="Default select example" value="<?php echo $row['exp']; ?>" disabled>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
-          </select>
+              <input type="text" class="form-control" name="exp" id="" value="<?php echo $row['exp']; ?>" disabled>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
@@ -187,7 +152,9 @@ session_start();
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">CV: </label>
-              <input type="file" class="form-control" name="cv" aria-label="file example" value="<?php echo $row['cv']; ?>" disabled>
+            <a class="pe-auto" href="../php/imagemoveStaff/<?php echo $row['cv'] ?>">
+              <input type="text" class="form-control" name="cv" placeholder="Click to view the document" id=""  disabled>
+            </a>          
           </div>
           </div>
         

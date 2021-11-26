@@ -100,20 +100,20 @@
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
             <select class="form-select form-control" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>"  required>
           <option selected required>Select your gender</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-          <option value="3">Others</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
             <select class="form-select form-control" name="religion" aria-label="Default select example" value="<?php echo $row['religion']; ?>"  required>
           <option selected required>Select your religion</option>
-          <option value="1">Hindu</option>
-          <option value="2">Muslim</option>
-          <option value="3">Sikh</option>
-          <option value="4">Christian</option>
-          <option value="5">Others</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Muslim">Muslim</option>
+          <option value="Sikh">Sikh</option>
+          <option value="Christian">Christian</option>
+          <option value="Others">Others</option>
         </select>
           </div>
         
@@ -122,38 +122,38 @@
             <label for="exampleInputPassword1" class="form-label">Category: </label>
             <select class="form-select form-control" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>"  required>
           <option selected required>Select your category</option>
-          <option value="1">General</option>
-          <option value="2">OBC / EBC</option>
-          <option value="3">SC / ST</option>
+          <option value="General">General</option>
+          <option value="OBC/EBC">OBC / EBC</option>
+          <option value="SC/ST">SC / ST</option>
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Position: </label>
             <select class="form-select form-control" name="position" aria-label="Default select example" value="<?php echo $row['position']; ?>"  required>
             <option selected required>Select your position</option>
-          <option value="1">Principal</option>
-          <option value="2">Counsellor</option>
-          <option value="3">Nurse</option>
-          <option value="4">Registrar</option>
-          <option value="5">Accountant</option>
-          <option value="4">Secretary</option>
+            <option value="Principal">Principal</option>
+          <option value="Counsellor">Counsellor</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Registrar">Registrar</option>
+          <option value="Accountant">Accountant</option>
+          <option value="Secretary">Secretary</option>
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Marital Status: <span><i class="fas fa-pen-nib"></i><span></label>
             <select class="form-select form-control" name="mstatus" aria-label="Default select example" value="<?php echo $row['mstatus']; ?>"  required>
             <option selected required>Select your status</option>
-          <option value="1">Single</option>
-          <option value="2">Married</option>
-          <option value="3">Divorced</option>
+            <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Divorced">Divorced</option>
         </select>
           </div>
         
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: </label>
               <select class="form-select form-control" name="exp" aria-label="Default select example" value="<?php echo $row['exp']; ?>"  required>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
+              <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">

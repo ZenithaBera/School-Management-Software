@@ -24,9 +24,7 @@
           <a href="../dashboard-login/staff-login.php" class="text-decoration-none fw-bold"
             ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a
           >
-          <a href="../admission/staff-delete.php" class="text-decoration-none fw-bold"
-            ><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a
-          >
+          
           
         </nav>
       </div>
@@ -102,10 +100,6 @@
                     class="nav-link fw-bold"
                     href="../dashboard-login/staff-login.php"
                   >Profile Details</a>
-                  <a 
-                    class="nav-link fw-bold"
-                    href="../admission/staff-delete.php"
-                  >For Admin Only</a>
                   <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link fw-bold">Login</a>
 
                 </nav>

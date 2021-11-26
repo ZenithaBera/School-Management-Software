@@ -84,8 +84,8 @@
               <th>State</th>
               <th>Pin Code</th>
               <th>Class</th>
-              <th>Section</th>
-              <th>Roll Number</th>
+              <th>Shift</th>
+              <th>School Bus</th>
               <th>Action</th>
           </thead>
           <tbody>

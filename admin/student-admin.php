@@ -97,8 +97,8 @@
               <th>State</th>
               <th>Pin Code</th>
               <th>Class</th>
-              <th>Section</th>
-              <th>Roll Number</th>
+              <th>Shift</th>
+              <th>School Bus</th>
               <th>Action</th>
           </thead>
           <tbody>
@@ -134,8 +134,8 @@
               <td><?php echo $row['state']; ?></td>
               <td><?php echo $row['pin']; ?></td>
               <td><?php echo $row['class']; ?></td>
-              <td><?php echo $row['section']; ?></td>
-              <td><?php echo $row['roll']; ?></td>
+              <td><?php echo $row['shift']; ?></td>
+              <td><?php echo $row['bus']; ?></td>
         
               <td>
                 <div class="row">

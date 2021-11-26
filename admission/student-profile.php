@@ -34,7 +34,6 @@ session_start();
             <a href="../dashboard/student-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
               <a class="text-decoration-none fw-bold" href="student-register.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
               <a href="../dashboard-login/student-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-              <a href="student-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>          
             </nav>
       </div>
 
@@ -70,7 +69,6 @@ session_start();
                   <a class="nav-link fw-bold" href="../dashboard/student-dashboard.php">Home</a>
                   <a class="nav-link fw-bold" href="student-register.php">Registration</a>
                   <a class="nav-link active bg-warning text-dark fw-bold" href="../dashboard-login/student-login.php">Profile Details</a>
-                    <a class="nav-link fw-bold" href="student-delete.php">For Admin Only</a>
                   
                 </nav>
               </div>
@@ -122,32 +120,15 @@ session_start();
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
-            <select class="form-select" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>" disabled>
-          <option selected disabled>Select your gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="others">Others</option>
-        </select>
+            <input type="text" class="form-control" name="gender" id="" value="<?php echo $row['gender']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
-            <select class="form-select" name="religion" aria-label="Default select example" value="<?php echo $row['religion']; ?>" disabled>
-          <option selected disabled>Select your religion</option>
-          <option value="hindu">Hindu</option>
-          <option value="muslim">Muslim</option>
-          <option value="sikh">Sikh</option>
-          <option value="christian">Christian</option>
-          <option value="others">Others</option>
-        </select>
+            <input type="text" class="form-control" name="religion" id="" value="<?php echo $row['religion']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: </label>
-            <select class="form-select" name="category" aria-label="Default select example" value="<?php echo $row['category']; ?>" disabled>
-          <option selected disabled>Select your category</option>
-          <option value="general">General</option>
-          <option value="obc/ebc">OBC / EBC</option>
-          <option value="sc/st">SC / ST</option>
-        </select>
+            <input type="text" class="form-control" name="category" id="" value="<?php echo $row['category']; ?>" disabled>
           </div>
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
@@ -169,7 +150,9 @@ session_start();
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Document: </label>
-            <img src="../php/imagemove/<?php echo $row['document'] ?>" class="w-100 rounded-3" style="height:40px" disabled>
+            <a class="pe-auto" href="../php/imagemove/<?php echo $row['document'] ?>">
+              <input type="text" class="form-control" name="document" placeholder="Click to view the document" id=""  disabled>
+            </a>          
           </div>
           </div>
         
@@ -214,12 +197,12 @@ session_start();
             <input type="text" class="form-control" name="class" placeholder="Enter your class" id="exampleInputName1" value="<?php echo $row['class']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Section: </label>
-            <input type="text" class="form-control" name="section" placeholder="Enter your section" id="exampleInputPassword1" value="<?php echo $row['section']; ?>" disabled>
+            <label for="exampleInputPassword1" class="form-label">Shift: </label>
+            <input type="text" class="form-control" name="shift" placeholder="Enter your section" id="exampleInputPassword1" value="<?php echo $row['shift']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Roll Number: </label>
-            <input type="text" class="form-control" name="roll" placeholder="Enter your roll number" id="exampleInputPassword1" value="<?php echo $row['roll']; ?>" disabled>
+            <label for="exampleInputPassword1" class="form-label">School Bus: </label>
+            <input type="text" class="form-control" name="bus" placeholder="Enter your roll number" id="exampleInputPassword1" value="<?php echo $row['bus']; ?>" disabled>
           </div></div>
       
       </form>

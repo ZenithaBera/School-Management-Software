@@ -20,7 +20,9 @@
 		$state = $_POST['state'];
 		$pin = $_POST['pin'];
 
-		$sql = "update student set mobnum='$mobnum',altnum='$altnum',email='$email',photo='$photo',address='$address',post='$post',police='$police',district='$district',state='$state',pin='$pin' where id = '$id'";
+		$bus = $_POST['bus'];
+
+		$sql = "update student set mobnum='$mobnum',altnum='$altnum',email='$email',photo='$photo',address='$address',post='$post',police='$police',district='$district',state='$state',pin='$pin',bus='$bus' where id = '$id'";
 
 		if(mysqli_query($conn,$sql)){
 			echo "<script>alert('Data Updated');</script>";
