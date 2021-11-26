@@ -75,7 +75,7 @@
 
           <!--Form-->
           <form action="staffdb_upd.php" method="POST" enctype="multipart/form-data">
-          Personal Details</h4><hr>
+          <h4 class="text-center mt-5">Personal Details</h4><hr>
         <div class="row">
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
@@ -99,7 +99,7 @@
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
             <select class="form-select form-control" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>"  required>
-          <option selected required>Select your gender</option>
+          <option>Select your gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Others">Others</option>

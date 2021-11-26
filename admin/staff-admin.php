@@ -108,7 +108,7 @@
               <td><?php echo $row['mobnum']; ?></td>
               <td><?php echo $row['altnum']; ?></td>
               <td><?php echo $row['dob']; ?></td>
-              <td><?php echo $row['gender']; ?></td>
+              <td><?php echo $row['gender']; ?></td>              
               <td><?php echo $row['religion']; ?></td>
               <td><?php echo $row['category']; ?></td>
               <td><?php echo $row['position']; ?></td>
