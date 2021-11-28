@@ -4,9 +4,9 @@ include('db_student.php');
 
     if(isset($_POST['login'])){
     $email=$_POST['email'];
-    $id=$_POST['id'];
+    $mobnum=$_POST['mobnum'];
 
-    $sql=mysqli_query($conn,"select * from student where email='$email' && id='$id'");
+    $sql=mysqli_query($conn,"select * from student where email='$email' && mobnum='$mobnum'");
     $num=mysqli_num_rows($sql);
     if($num>0)
     {

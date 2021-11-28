@@ -64,7 +64,6 @@ include('../php/db_teacher.php');
                     <a class="nav-link fw-bold" href="../dashboard/teacher-dashboard.php">Home</a>
                     <a class="nav-link fw-bold" href="../admission/teacher-register.php">Registration</a>
                     <a class="nav-link active bg-warning text-dark fw-bold" href="teacher-login.php">Profile Details</a>
-                    <a class="nav-link fw-bold" href="../admission/teacher-delete.php">For Admin Only</a>
                   </nav>
                 </div>
               </nav>
@@ -74,9 +73,9 @@ include('../php/db_teacher.php');
     if(isset($_POST['login'])){
     
     $email=$_POST['email'];
-    $id=$_POST['id'];
+    $phnnum=$_POST['phnnum'];
 
-    $sql=mysqli_query($conn,"select * from teacher where email='$email' && id='$id'");
+    $sql=mysqli_query($conn,"select * from teacher where email='$email' && phnnum='$phnnum'");
     $num=mysqli_num_rows($sql);
     if($num>0)
     {
@@ -99,7 +98,7 @@ include('../php/db_teacher.php');
               <th>Aadhar Number</th>
               <th>Email Id</th>
               <th>Date Of Joining</th>
-              <th>CV</th>
+              <th>Document</th>
               <th>Photo</th>
               <th>Address</th>
               <th>Post Office</th>
@@ -130,12 +129,12 @@ include('../php/db_teacher.php');
               <td><?php echo $row['aadhar']; ?></td>
               <td><?php echo $row['email']; ?></td>
               <td><?php echo $row['doj']; ?></td>
-              <td><?php echo $row['cv']; ?></td>
+              <td><?php echo $row['docu']; ?></td>
               <td><?php echo $row['photo']; ?></td>
               <td><?php echo $row['address']; ?></td>
               <td><?php echo $row['post']; ?></td>
               <td><?php echo $row['police']; ?></td>
-              <td><?php echo $row['district']; ?></td>
+              <td><?php echo $row['dist']; ?></td>
               <td><?php echo $row['state']; ?></td>
               <td><?php echo $row['pin']; ?></td>
         

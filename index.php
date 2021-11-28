@@ -25,7 +25,7 @@
           >
           <a href="about-us.php" class="p-4">About Us</a>
           <a href="photo-gallery.php" class="p-4">Photo Gallery</a>
-          <a href="dashboard/student-dashboard.php" class="p-4">Admission</a>
+          <a href="std-admission.php" class="p-4">Admission</a>
           <a href="academics.php" class="p-4">Academics</a>
           <a href="infrastructure.php" class="p-4">Infrastructure</a>
           <a href="contact.php" class="p-4">Contact</a>
@@ -61,7 +61,7 @@
                   >
                   <a class="nav-link" href="about-us.php">About Us</a>
                   <a class="nav-link" href="photo-gallery.php">Photo Gallery</a>
-                  <a class="nav-link" href="dashboard/student-dashboard.php">Admission</a>
+                  <a class="nav-link" href="std-admission.php">Admission</a>
                   <a class="nav-link" href="academics.php">Academics</a>
                   <a class="nav-link" href="infrastructure.php">Infrastructure</a>
                   <a class="nav-link" href="contact.php">Contact</a>
@@ -199,8 +199,8 @@
             <input type="email" class="form-control bg-secondary text-light opacity-75" name="email" id="">
           </div>
           <div class="mb-3">
-            <label for="" class="col-form-label">Student Id:</label>
-            <input type="number" class="form-control bg-secondary text-light opacity-75" name="id" id="">
+            <label for="" class="col-form-label">Mobile Number:</label>
+            <input type="number" class="form-control bg-secondary text-light opacity-75" name="mubnum" id="">
           </div>
         
       </div>

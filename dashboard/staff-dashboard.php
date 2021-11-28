@@ -34,12 +34,12 @@
           <div class="col">
           <p class="h3 fw-bold float-start">Dashboard</p></div>
           <div class="col mb-5">
-          <!-- Button trigger modal -->
+          <!-- Button trigger modal --><!--
           <button type="button" class="btn-sm btn-warning float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Login
-          </button></div></div>
+          </button></div></div>-->
 
-<!-- Modal -->
+<!-- Modal --><!--
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content bg-dark">
@@ -54,8 +54,8 @@
             <input type="email" class="form-control bg-secondary text-light opacity-75" name="email" id="">
           </div>
           <div class="mb-3">
-            <label for="" class="col-form-label">Staff Id:</label>
-            <input type="number" class="form-control bg-secondary text-light opacity-75" name="id" id="">
+            <label for="" class="col-form-label">Mobile Number:</label>
+            <input type="text" class="form-control bg-secondary text-light opacity-75" name="mobnum" id="">
           </div>
         
       </div>
@@ -63,7 +63,7 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-warning" name="login">Login</a></form>
       </div>
-    </div>
+    </div>-->
     </div>
     </div>
 
@@ -100,7 +100,7 @@
                     class="nav-link fw-bold"
                     href="../dashboard-login/staff-login.php"
                   >Profile Details</a>
-                  <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link fw-bold">Login</a>
+                  <!--<a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link fw-bold">Login</a>-->
 
                 </nav>
               </div>

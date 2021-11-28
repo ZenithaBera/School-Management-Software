@@ -28,7 +28,6 @@ include('../php/db_staff.php');
               <a href="../dashboard/staff-dashboard.php" class="text-decoration-none fw-bold"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
                 <a href="../admission/staff-register.php" class="text-decoration-none fw-bold"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Registration</a>
                 <a href="staff-login.php" class="active text-decoration-none bg-warning text-dark fw-bold"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Profile Details</a>
-                <a href="../admission/staff-delete.php" class="text-decoration-none fw-bold"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;&nbsp;For Admin Only</a>
                 
             </nav>
         </div>
@@ -74,9 +73,9 @@ include('../php/db_staff.php');
     if(isset($_POST['login'])){
     
     $email=$_POST['email'];
-    $id=$_POST['id'];
+    $mobnum=$_POST['mobnum'];
 
-    $sql=mysqli_query($conn,"select * from staff where email='$email' && id='$id'");
+    $sql=mysqli_query($conn,"select * from staff where email='$email' && mobnum='$mobnum'");
     $num=mysqli_num_rows($sql);
     if($num>0)
     {

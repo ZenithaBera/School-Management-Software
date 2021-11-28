@@ -2,24 +2,22 @@
     $host="localhost";
     $username="root";
     $password="";
-    $db="admin_student";
+    $db="admin";
     $conn=mysqli_connect($host,$username,$password,$db);
 
-    if(isset($_POST['login1']))
+    if(isset($_POST['login']))
     {
     $id=$_POST['id'];
     $username=$_POST['username'];
     $password=$_POST['password'];
 
-    $sql=mysqli_query($conn,"select * from `student-admin` where id='$id' && username='$username' && password='$password'");
+    $sql=mysqli_query($conn,"select * from `master-admin` where id='$id' && username='$username' && password='$password'");
     $num=mysqli_num_rows($sql);
-   
-    if($num>0)
-    {
+    if($num>0){
         echo '<script type="text/JavaScript"> alert("Successfully logged in");</script>';   
         echo '<script type="text/javascript">
-			window.location="student-admin.php";
-		</script>';   
+			window.location="admin_panel.php";
+		</script>';  
     }
     else{
         
