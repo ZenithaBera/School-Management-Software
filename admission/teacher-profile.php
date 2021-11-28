@@ -165,12 +165,10 @@ session_start();
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">CV: </label>
+            <a class="pe-auto" href="../php/imagemoveTeacher/<?php echo $row['document'] ?>">
               <input type="file" class="form-control" name="docu" aria-label="file example" value="<?php echo $row['docu']; ?>" disabled>
           </div>
-          <!-- <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Photo: </label>
-              <input type="file" class="form-control" name="photo" aria-label="file example" disabled>
-          </div> -->
+         
         </div>
         
         
