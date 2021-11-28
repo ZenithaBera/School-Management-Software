@@ -16,7 +16,7 @@
           <a href="index.php" class="p-4">Home</a>
           <a href="about-us.php" class="p-4">About Us</a>
           <a href="photo-gallery.php" class="p-4">Photo Gallery</a>
-          <a href="dashboard/student-dashboard.php" class="p-4">Admission</a>
+          <a href="std-admission.php" class="p-4">Admission</a>
           <a href="academics.php" class="p-4">Academics</a>
           <a
             href="infrastructure.php"
@@ -52,7 +52,7 @@
                   <a class="nav-link" href="index.php">Home</a>
                   <a class="nav-link" href="about.php">About Us</a>
                   <a class="nav-link" href="photo-gallery.php">Photo Gallery</a>
-                  <a class="nav-link" href="dashboard/student-dashboard.php">Admission</a>
+                  <a class="nav-link" href="std-admission.php">Admission</a>
                   <a class="nav-link" href="academics.php">Academics</a>
                   <a
                     class="nav-link active bg-warning text-dark"

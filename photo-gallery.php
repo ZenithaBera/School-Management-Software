@@ -21,7 +21,7 @@
             class="p-4 active bg-warning text-dark"
             >Photo Gallery</a
           >
-          <a href="dashboard/student-dashboard.php" class="p-4">Admission</a>
+          <a href="std-admission.php" class="p-4">Admission</a>
           <a href="academics.php" class="p-4">Academics</a>
           <a href="infrastructure.php" class="p-4">Infrastructure</a>
           <a href="contact.php" class="p-4">Contact</a>
@@ -57,7 +57,7 @@
                     href="photo-gallery.php"
                     >Photo Gallery</a
                   >
-                  <a class="nav-link" href="dashboard/student-dashboard.php">Admission</a>
+                  <a class="nav-link" href="std-admission.php">Admission</a>
                   <a class="nav-link" href="academics.php">Academics</a>
                   <a class="nav-link" href="infrastructure.php">Infrastructure</a>
                   <a class="nav-link" href="contact.php">Contact</a>
