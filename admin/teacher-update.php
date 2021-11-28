@@ -83,11 +83,11 @@
             <input type="text" class="form-control" name="name" placeholder="Enter your name" id="exampleInputName1"  value="<?php echo $row['name']; ?>" >
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Department: </label>
-            <input type="text" class="form-control" name="dept" placeholder="Enter the department" id="exampleInputPassword1"  value="<?php echo $row['dept']; ?>">
+            <label for="exampleInputPassword1" class="form-label">Department: <span><i class="fas fa-pen-nib"></i><span> </label>
+            <input type="text" class="form-control" name="dept" placeholder="Enter the department" id="exampleInputPassword1"  value="<?php echo $row['dept']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">Class: </label>
+            <label for="exampleInputPassword1" class="form-label">Class: <span><i class="fas fa-pen-nib"></i><span> </label>
             <input type="text" class="form-control" name="class" placeholder="Enter the class" id="exampleInputPassword1"  value="<?php echo $row['class']; ?>" required>
           </div>
           
@@ -108,42 +108,42 @@
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
             <select class="form-select form-control" name="gender" aria-label="Default select example"  value="<?php echo $row['gender']; ?>" required>
           <option selected required>Select your gender</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-          <option value="3">Others</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Religion: </label>
             <select class="form-select form-control" name="rel" aria-label="Default select example"  value="<?php echo $row['rel']; ?>" required>
           <option selected required>Select your religion</option>
-          <option value="1">Hindu</option>
-          <option value="2">Muslim</option>
-          <option value="3">Sikh</option>
-          <option value="4">Christian</option>
-          <option value="5">Others</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Muslim">Muslim</option>
+          <option value="Sikh">Sikh</option>
+          <option value="Chirstian">Christian</option>
+          <option value="Others">Others</option>
         </select>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Category: </label>
             <select class="form-select form-control" name="category" aria-label="Default select example"  value="<?php echo $row['category']; ?>" required>
           <option selected required>Select your category</option>
-          <option value="1">General</option>
-          <option value="2">OBC / EBC</option>
-          <option value="3">SC / ST</option>
+          <option value="General">General</option>
+          <option value="OBC/EBC">OBC / EBC</option>
+          <option value="SC">SC / ST</option>
         </select>
           </div>
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputPassword1" class="form-label">Experienced: </label>
-              <select class="form-select form-control" name="exp" aria-label="Default select example"  value="<?php echo $row['exp']; ?>" required>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
+              <select class="form-select form-control" name="exp" aria-label="Default select example"  value="<?php echo $row['exp']; ?>">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
             </div>
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Aadhar Number: </label>
-              <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1"  value="<?php echo $row['aadhar']; ?>" required>
+              <input type="text" class="form-control" name="aadhar" placeholder="e.g. 1111 2222 3333" id="exampleInputName1"  value="<?php echo $row['aadhar']; ?>">
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Email Id: <span><i class="fas fa-pen-nib"></i><span></label>
@@ -152,10 +152,10 @@
           
             <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
               <label for="exampleInputEmail1" class="form-label">Date Of Joining: </label>
-              <input type="date" class="form-control" name="doj" id="exampleInputName1"  value="<?php echo $row['doj']; ?>" required>
+              <input type="date" class="form-control" name="doj" id="exampleInputName1"  value="<?php echo $row['doj']; ?>">
             </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
-            <label for="exampleInputPassword1" class="form-label">CV: </label>
+            <label for="exampleInputPassword1" class="form-label">CV: <span><i class="fas fa-pen-nib"></i><span> </label>
               <input type="file" class="form-control" name="docu" aria-label="file example"  value="<?php echo $row['docu']; ?>" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">

@@ -99,7 +99,7 @@
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Gender: </label>
             <select class="form-select form-control" name="gender" aria-label="Default select example" value="<?php echo $row['gender']; ?>"  required>
-          <option>Select your gender</option>
+          <option value="" disabled>Select your gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Others">Others</option>

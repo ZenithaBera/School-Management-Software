@@ -38,8 +38,6 @@
             <div class="p-4 topbar">
               <p class="h3 fw-bold">Update</p>
             </div>
-
-
             <div class="col-md-12 col-sm-12 nav2">
               <div class="dropdown">
                 <nav
@@ -71,8 +69,6 @@
                 </nav>
               </div>
             </div>
-            
-
           <!--Form-->
           <form action="studentdb_upd.php" method="POST" enctype="multipart/form-data">
         <h4 class="text-center mt-5">Personal Details</h4><hr>
