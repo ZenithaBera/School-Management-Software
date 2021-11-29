@@ -53,7 +53,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Mobile Number: </label>
-    <input type="text" class="form-control bg-secondary" name="mobnum">
+    <input type="tel" class="form-control bg-secondary" name="mobnum">
   </div>
   <div class="d-flex justify-content-center">
   <button type="submit" class="btn btn-warning" name="login">Login</button>&nbsp;

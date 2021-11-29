@@ -84,11 +84,11 @@
           
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Phone Number: <span>*<span></label>
-            <input type="text" class="form-control" name="phnnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
+            <input type="tel" class="form-control" name="phnnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: <span>*<span></label>
-            <input type="text" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" required>
+            <input type="tel" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" required>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Date Of Birth (DOB): <span>*<span></label>

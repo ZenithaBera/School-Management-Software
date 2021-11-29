@@ -89,11 +89,11 @@ session_start();
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputEmail1" class="form-label">Phone Number: </label>
-            <input type="text" class="form-control" name="mobnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" value="<?php echo $row['mobnum']; ?>" disabled>
+            <input type="tel" class="form-control" name="mobnum" placeholder="e.g. 98XXXXXXXX" id="exampleInputName1" value="<?php echo $row['mobnum']; ?>" disabled>
           </div>
           <div class="col-md-3 m-md-5 mt-md-0 mb-md-3 col-sm-12">
             <label for="exampleInputPassword1" class="form-label">Alternative Number: </label>
-            <input type="text" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" value="<?php echo $row['altnum']; ?>" disabled>
+            <input type="tel" class="form-control" name="altnum" placeholder="Enter alternative number" id="exampleInputPassword1" value="<?php echo $row['altnum']; ?>" disabled>
           </div>
           
           
