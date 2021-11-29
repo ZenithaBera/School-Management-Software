@@ -6,7 +6,7 @@
     $email=$_POST['email'];
     $mobnum=$_POST['mobnum'];
 
-    $sql=mysqli_query($conn,"select * from student where email='$email' && mobnum='$mobnum'");
+    $sql=mysqli_query($conn,"select * from staff where email='$email' && mobnum='$mobnum'");
     $num=mysqli_num_rows($sql);
     if($num>0){
         echo '<script type="text/JavaScript"> alert("Successfully logged in");</script>';   
@@ -61,7 +61,7 @@
 </div>
 <br>
   <p>Didn't register yet?
-  <a href="admission/student-register.php" type="submit" class="btn btn-secondary" autocomplete="off">Register</a></p>
+  <a href="admission/staff-register.php" type="submit" class="btn btn-secondary" autocomplete="off">Register</a></p>
 </form>
 </div>
 </div>

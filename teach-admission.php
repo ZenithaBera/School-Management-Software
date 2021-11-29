@@ -6,12 +6,12 @@
     $email=$_POST['email'];
     $phnnum=$_POST['phnnum'];
 
-    $sql=mysqli_query($conn,"select * from student where email='$email' && phnnum='$phnnum'");
+    $sql=mysqli_query($conn,"select * from teacher where email='$email' && phnnum='$phnnum'");
     $num=mysqli_num_rows($sql);
     if($num>0){
         echo '<script type="text/JavaScript"> alert("Successfully logged in");</script>';   
         echo '<script type="text/javascript">
-			window.location="dashboard/student-dashboard.php";
+			window.location="dashboard/teacher-dashboard.php";
 		</script>';  
     }
     else{
@@ -61,7 +61,7 @@
 </div>
 <br>
   <p>Didn't register yet?
-  <a href="admission/student-register.php" type="submit" class="btn btn-secondary" autocomplete="off">Register</a></p>
+  <a href="admission/teacher-register.php" type="submit" class="btn btn-secondary" autocomplete="off">Register</a></p>
 </form>
 </div>
 </div>
